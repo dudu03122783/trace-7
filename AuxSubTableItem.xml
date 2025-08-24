@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AuxSubTableItems>
+	<AuxSubTableItem libId="default" tableCode="故障诊断履历-状态1" orderNo="0" startPos="0" startCount="7" itemName="控制同步层" converterId="DecimalConverter"/>
+	<AuxSubTableItem libId="default" tableCode="故障诊断履历-状态1" orderNo="1" startPos="7" startCount="1" itemName="门区标志" converterId="ValueTableConverter" converterParam="门区标志"/>
+	<AuxSubTableItem libId="default" tableCode="故障诊断履历-状态2" orderNo="0" startPos="0" startCount="3" itemName="速度图形模式" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="故障诊断履历-状态2" orderNo="1" startPos="3" startCount="1" itemName="41DG" converterId="ValueTableConverter" converterParam="41DG"/>
+	<AuxSubTableItem libId="default" tableCode="故障诊断履历-状态2" orderNo="2" startPos="4" startCount="2" itemName="开关门指令" converterId="ValueTableConverter" converterParam="开关门指令"/>
+	<AuxSubTableItem libId="default" tableCode="故障诊断履历-状态2" orderNo="3" startPos="6" startCount="2" itemName="上下行方向" converterId="ValueTableConverter" converterParam="上下行指令"/>
+	<AuxSubTableItem libId="default" tableCode="故障诊断履历-门应答类型" orderNo="0" startPos="0" startCount="1" itemName="应答层站普通召唤" converterId="ConditionConverter" converterParam="1,应答层站普通召唤"/>
+	<AuxSubTableItem libId="default" tableCode="故障诊断履历-门应答类型" orderNo="1" startPos="1" startCount="1" itemName="应答层站残疾人召唤" converterId="ConditionConverter" converterParam="1,应答层站残疾人召唤"/>
+	<AuxSubTableItem libId="default" tableCode="故障诊断履历-门应答类型" orderNo="2" startPos="2" startCount="1" itemName="应答层站VIP召唤" converterId="ConditionConverter" converterParam="1,应答层站VIP召唤"/>
+	<AuxSubTableItem libId="default" tableCode="故障诊断履历-门应答类型" orderNo="3" startPos="3" startCount="1" itemName="应答层站关门待机召唤" converterId="ConditionConverter" converterParam="1,应答层站关门待机召唤"/>
+	<AuxSubTableItem libId="default" tableCode="故障诊断履历-门应答类型" orderNo="4" startPos="4" startCount="1" itemName="应答轿内普通指令" converterId="ConditionConverter" converterParam="1,应答轿内普通指令"/>
+	<AuxSubTableItem libId="default" tableCode="故障诊断履历-门应答类型" orderNo="5" startPos="5" startCount="1" itemName="应答轿内残疾人指令" converterId="ConditionConverter" converterParam="1,应答轿内残疾人指令"/>
+	<AuxSubTableItem libId="default" tableCode="故障诊断履历-门应答类型" orderNo="6" startPos="6" startCount="1" itemName="应答轿内VIP指令" converterId="ConditionConverter" converterParam="1,应答轿内VIP指令"/>
+	<AuxSubTableItem libId="default" tableCode="故障诊断履历-门应答类型" orderNo="7" startPos="7" startCount="1" itemName="应答轿内关门待机指令" converterId="ConditionConverter" converterParam="1,应答轿内关门待机指令"/>
+	<AuxSubTableItem libId="default" tableCode="初始化动作履历" orderNo="0" startPos="2" startCount="7" itemName="时间" converterId="DateWith5MsConverter"/>
+	<AuxSubTableItem libId="default" tableCode="时间戳动作履历" orderNo="0" startPos="2" startCount="7" itemName="时间" converterId="DateWith5MsConverter"/>
+	<AuxSubTableItem libId="default" tableCode="结束标志动作履历" orderNo="0" startPos="2" startCount="7" itemName="时间" converterId="DateWith5MsConverter"/>
+	<AuxSubTableItem libId="default" tableCode="故障检出点动作履历" orderNo="0" startPos="2" startCount="7" itemName="记录时间" converterId="DateWith5MsConverter"/>
+	<AuxSubTableItem libId="default" tableCode="故障检出点动作履历" orderNo="1" startPos="10" startCount="4" itemName="诊断代码" converterId="HexWithDictConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="0" startPos="2" startCount="1" itemCode="KQ_OP_OPRMD" itemName="运行模式，如“全自动模式”" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="1" startPos="3" startCount="1" itemCode="KQ_OP_OPRSTA" itemName="到站状态，如“运行中”，“已到站”等" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="2" startPos="4" startCount="1" itemCode="SQ_OP_EQH_REQ" itemName="高地震应急运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="3" startPos="5" startCount="1" itemCode="SQ_OP_EQM_REQ" itemName="低地震应急运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="4" startPos="6" startCount="1" itemCode="SQ_OP_EQL_REQ" itemName="特低地震应急运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="5" startPos="7" startCount="1" itemCode="SQ_OP_FES_REQ" itemName="消防一阶段运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="6" startPos="8" startCount="1" itemCode="SQ_OP_FE2S_REQ" itemName="消防二阶段运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="7" startPos="9" startCount="1" itemCode="SQ_OP_FE_REQ" itemName="消防运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="8" startPos="10" startCount="1" itemCode="SQ_OP_FER_REQ" itemName="消防返回运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="9" startPos="11" startCount="1" itemCode="SQ_OP_50C_REQ" itemName="机房50°运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="10" startPos="12" startCount="1" itemCode="SQ_OP_DOCKING_REQ" itemName="对接操作运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="11" startPos="13" startCount="1" itemCode="SQ_OP_EMGRET_REQ" itemName="紧急返回运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="12" startPos="14" startCount="1" itemCode="SQ_OP_HOSPITAL_REQ" itemName="医梯运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="13" startPos="15" startCount="1" itemCode="SQ_OP_NLH_REQ" itemName="开门重故障运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="14" startPos="16" startCount="1" itemCode="DUMMY" itemName="预留" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="15" startPos="17" startCount="1" itemCode="SQ_OP_ABNM_CARMC" itemName="轿厢CPU异常运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="16" startPos="18" startCount="1" itemCode="SQ_OP_ABNM_NFSC" itemName="最近层停靠运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="17" startPos="19" startCount="1" itemCode="SQ_OP_ABNM_HALMC" itemName="层站CPU异常运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="18" startPos="20" startCount="1" itemCode="SQ_OP_NRSL_REQ" itemName="不能再启动运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="19" startPos="21" startCount="1" itemCode="SQ_OP_29_REQ" itemName="安全回路断开运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="20" startPos="22" startCount="1" itemCode="SQ_OP_IND_REQ" itemName="独立运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="21" startPos="23" startCount="1" itemCode="SQ_OP_WA_REQ" itemName="远程控制运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="22" startPos="24" startCount="1" itemCode="SQ_OP_VIP_REQ" itemName="VIP运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="23" startPos="25" startCount="1" itemCode="SQ_OP_RET_REQ" itemName="一般返回运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="24" startPos="26" startCount="1" itemCode="SQ_OP_HOS_REQ" itemName="层站休止运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="25" startPos="27" startCount="1" itemCode="SQ_OP_RCS_REQ" itemName="远程休止运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="26" startPos="28" startCount="1" itemCode="SQ_OP_NSCB_REQ" itemName="NSCB设定要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="27" startPos="29" startCount="1" itemCode="SQ_OP_SCSB_REQ" itemName="SCSB设定要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="28" startPos="30" startCount="1" itemCode="SQ_OP_SU_SUSPEND_REQ" itemName="安装停止运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="运行状态动作履历" orderNo="29" startPos="31" startCount="1" itemCode="SQ_OP_NEARBY_STOP_REQ" itemName="最近层停靠运行要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="呼叫和应答状态动作履历" orderNo="0" startPos="2" startCount="1" itemCode="VQ_CC_FCLLS" itemName="当前轿厢前门未应答的呼叫个数" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="呼叫和应答状态动作履历" orderNo="1" startPos="3" startCount="1" itemCode="VQ_CC_RCLLS" itemName="当前轿厢后门未应答的呼叫个数" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="呼叫和应答状态动作履历" orderNo="2" startPos="4" startCount="1" itemCode="VQ_CC_FKIND" itemName="当前轿厢前门呼叫应答种别" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="呼叫和应答状态动作履历" orderNo="3" startPos="5" startCount="1" itemCode="VQ_CC_RKIND" itemName="当前轿厢后门呼叫应答种别" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="呼叫和应答状态动作履历" orderNo="4" startPos="6" startCount="1" itemCode="VQ_CH_FKIND" itemName="当前层站前门呼叫应答种别" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="呼叫和应答状态动作履历" orderNo="5" startPos="7" startCount="1" itemCode="VQ_CH_RKIND" itemName="当前层站后门呼叫应答种别" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="轿厢动作状态动作履历" orderNo="0" startPos="2" startCount="1" itemCode="VQ_CSYN" itemName="控制同步层" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="轿厢动作状态动作履历" orderNo="1" startPos="3" startCount="1" itemCode="VQ_CADV" itemName="控制前进层" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="轿厢动作状态动作履历" orderNo="2" startPos="4" startCount="1" itemCode="VQ_CM_CAR_MOVE_STS" itemName="轿厢运行状态，如停止，运行等" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="轿厢动作状态动作履历" orderNo="3" startPos="5" startCount="1" itemCode="VQ_CM_START_DIR" itemName="轿厢运行方向" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="轿厢动作状态动作履历" orderNo="4" startPos="6" startCount="1" itemCode="VQ_CM_STOP_LEVEL" itemName="运行后的停止位置*" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="轿厢动作状态动作履历" orderNo="5" startPos="7" startCount="1" itemCode="VQ_CM_START_REQ" itemName="启动/停止要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="轿厢动作状态动作履历" orderNo="6" startPos="8" startCount="1" itemCode="VQ_CM_GOFLOOR" itemName="控制对应的目的楼层" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="轿厢动作状态动作履历" orderNo="7" startPos="9" startCount="1" itemCode="VQ_CM_START_FLOOR" itemName="控制对应的启动楼层" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="0" startPos="2" startCount="1" itemCode="TQ_DR_PMTOPN[LL_DR_FRONT]" itemName="前门DZ内开门许可" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="1" startPos="3" startCount="1" itemCode="TQ_DR_PMTOPN[LL_DR_REAR]" itemName="后门DZ内开门许可" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="2" startPos="4" startCount="1" itemCode="KQ_DR_DCUT" itemName="门切状态" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="3" startPos="5" startCount="1" itemCode="KZ_F43" itemName="前门门开闭状态" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="4" startPos="6" startCount="1" itemCode="KZ_R43" itemName="后门门开闭状态" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="5" startPos="7" startCount="1" itemCode="VQ_DR_F43" itemName="前门开门要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="6" startPos="8" startCount="1" itemCode="VQ_DR_R43" itemName="后门开门要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="7" startPos="9" startCount="1" itemCode="PQ_DR_OPN_ELM[LL_DR_FRONT]" itemName="前门开门要因" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="8" startPos="10" startCount="1" itemCode="PQ_DR_OPN_ELM[LL_DR_REAR]" itemName="后门开门要因" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="9" startPos="11" startCount="1" itemCode="KB_41DGL" itemName="门位置（1：门关好）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="10" startPos="12" startCount="1" itemCode="SE_FCLT" itemName="前门CLT信号（1：前轿门关门到位）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="11" startPos="13" startCount="1" itemCode="SE_RCLT" itemName="后门CLT信号（1：后轿门关门到位）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="12" startPos="14" startCount="1" itemCode="SE_FFG" itemName="前门FG信号（1：前轿门FG有效）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="13" startPos="15" startCount="1" itemCode="SE_RFG" itemName="后门FG信号（1：后轿门FG有效）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="14" startPos="16" startCount="1" itemCode="SE_FOLT" itemName="前门OLT检出（0：前轿门开门到位）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="15" startPos="17" startCount="1" itemCode="SE_ROLT" itemName="后门OLT检出（0：后轿门开门到位）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="16" startPos="18" startCount="1" itemCode="PQ_DR_CLS_ELM[LL_DR_FRONT]" itemName="前门关闭要因" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="17" startPos="19" startCount="1" itemCode="PQ_DR_CLS_ELM[LL_DR_REAR]" itemName="后门关闭要因" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="18" startPos="20" startCount="1" itemCode="PQ_DR_FRCCLS_ELM[LL_DR_FRONT]" itemName="前门强制关闭要因" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="19" startPos="21" startCount="1" itemCode="PQ_DR_FRCCLS_ELM[LL_DR_REAR]" itemName="后门强制关闭要因" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="20" startPos="22" startCount="1" itemCode="KZ_FDOSPD" itemName="前门门开闭速度（高中低特低）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="21" startPos="23" startCount="1" itemCode="KZ_RDOSPD" itemName="后门门开闭速度（高中低特低）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="22" startPos="24" startCount="1" itemCode="PQ_DR_DOOR_STATUS[LL_DR_FRONT]" itemName="前门门开闭状态" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="23" startPos="25" startCount="1" itemCode="PQ_DR_DOOR_STATUS[LL_DR_REAR]" itemName="后门门开闭状态" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="24" startPos="26" startCount="1" itemCode="PQ_DR_DOOR_FLCLS_STA[LL_DR_FRONT]" itemName="前门门全闭状态" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="25" startPos="27" startCount="1" itemCode="PQ_DR_DOOR_FLCLS_STA[LL_DR_REAR]" itemName="后门门全闭状态" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="26" startPos="28" startCount="1" itemCode="PQ_DR_DOOR_HFOPN_STA[LL_DR_FRONT]" itemName="前门门半闭状态" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="27" startPos="29" startCount="1" itemCode="PQ_DR_DOOR_HFOPN_STA[LL_DR_REAR]" itemName="后门门半闭状态" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="28" startPos="30" startCount="1" itemCode="PQ_DR_DOOR_FLOPN_STA[LL_DR_FRONT]" itemName="前门门全开状态" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="门状态动作履历" orderNo="29" startPos="31" startCount="1" itemCode="PQ_DR_DOOR_FLOPN_STA[LL_DR_REAR]" itemName="后门门全开状态" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="0" startPos="0" startCount="4" itemCode="SN_29  安全开关" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="1" startPos="4" startCount="4" itemCode="SS_29LT  安全开关 (锁存)" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="2" startPos="8" startCount="4" itemCode="SN_PCH  控制面板门打开" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="3" startPos="12" startCount="4" itemCode="SN_60 自动/检修开关 [ＯＮ:１]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="4" startPos="16" startCount="4" itemCode="SN_60A  自动/检修开关 [ＯＮ:１]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="5" startPos="20" startCount="4" itemCode="SW_60E  60･60A合理性异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="6" startPos="24" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="7" startPos="28" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="8" startPos="32" startCount="4" itemCode="SS_PWF  ７９回路電源异常 [异常:０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="9" startPos="36" startCount="4" itemCode="SS_ACFS  ＡＣ電源异常 [异常:０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="10" startPos="40" startCount="4" itemCode="SS_PSPF   ＤＣ－ＤＣ转换异常 [异常:０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="11" startPos="44" startCount="4" itemCode="SS_RPWD  ＰＷＤ－１ ＦＥＴ Ｏｎ検出 [検出:０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="12" startPos="48" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="13" startPos="52" startCount="4" itemCode="SS_P12VF  １２Ｖ電源异常 [异常:０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="14" startPos="56" startCount="4" itemCode="SS_24VF ２４Ｖ電源异常 [异常:０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="15" startPos="60" startCount="4" itemCode="SS_S79ER  １２５Ｖ電源异常（ＧＰＳ－４） [异常:０]" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="16" startPos="64" startCount="4" itemCode="SW_ACFST  AC電源低下" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="17" startPos="68" startCount="4" itemCode="SW_PSPFT  DC電源低下" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="18" startPos="72" startCount="4" itemCode="SF_POKL" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="19" startPos="76" startCount="4" itemCode="SW_D89 安全回路動作" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="20" startPos="80" startCount="4" itemCode="SW_EST" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="21" startPos="84" startCount="4" itemCode="SW_SFS" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="22" startPos="88" startCount="4" itemCode="SW_NFS" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="23" startPos="92" startCount="4" itemCode="SD_32GQ  急停 驱动S/W" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="24" startPos="96" startCount="4" itemCode="SC_S29  急停 管理S/W" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="25" startPos="100" startCount="4" itemCode="SS_MCP_D89  ＭＣＰ側安全回路 ＃８９指令moto" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="26" startPos="104" startCount="4" itemCode="SS_DEST  E.STOP(SLC)" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="27" startPos="108" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="28" startPos="112" startCount="4" itemCode="SW_NDP  出发异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="29" startPos="116" startCount="4" itemCode="SW_RTY  低电量重试" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="30" startPos="120" startCount="4" itemCode="SW_NRS  起動不能" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="31" startPos="124" startCount="4" itemCode="SD_DNRS  再起動不能 駆動S/W" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="32" startPos="128" startCount="4" itemCode="SP_RUNC  开门禁止状態" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="33" startPos="132" startCount="4" itemCode="SY_FD22  強制关门指令" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="34" startPos="136" startCount="4" itemCode="SC_F43   关门指令（前门）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="35" startPos="140" startCount="4" itemCode="SC_R43   关门指令（后门）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="36" startPos="144" startCount="4" itemCode="SY_F1_D21" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="37" startPos="148" startCount="4" itemCode="SY_F1_D22" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="38" startPos="152" startCount="4" itemCode="SY_R1_D21" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="39" startPos="156" startCount="4" itemCode="SY_R1_D22" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="40" startPos="160" startCount="4" itemCode="SS_MCP_D21 ＭＣＰ側前门开门指令moto" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="41" startPos="164" startCount="4" itemCode="SS_MCP_D21R  ＭＣＰ側后门开门指令moto" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="42" startPos="168" startCount="4" itemCode="SS_MCP_D22  ＭＣＰ側关门指令｛前门・后门共通｝moto" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="43" startPos="172" startCount="4" itemCode="SN_41DGA  厅门门锁和轿门门锁开关检出（外部信号）[閉：１]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="44" startPos="176" startCount="4" itemCode="SN_41DG  厅门门锁和轿门门锁开关检出（内部信号）[閉：１]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="45" startPos="180" startCount="4" itemCode="SN_G4  轿门门锁 [閉：１]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="46" startPos="184" startCount="4" itemCode="SN_D41N 门锁信号・・海外 [閉：０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="47" startPos="188" startCount="4" itemCode="SN_D41  门锁信号・・海外 [閉：１]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="48" startPos="192" startCount="4" itemCode="SN_DOQ  前门安全触板 [开门：１]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="49" startPos="196" startCount="4" itemCode="SN_DOQR  后门安全触板 [开门：１]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="50" startPos="200" startCount="4" itemCode="SF_F41G" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="51" startPos="204" startCount="4" itemCode="SF_FCLT" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="52" startPos="208" startCount="4" itemCode="SF_FFG" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="53" startPos="212" startCount="4" itemCode="SF_FOLT" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="54" startPos="216" startCount="4" itemCode="SF_R41G" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="55" startPos="220" startCount="4" itemCode="SF_RCLT" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="56" startPos="224" startCount="4" itemCode="SF_RFG" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="57" startPos="228" startCount="4" itemCode="SF_ROLT" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="58" startPos="232" startCount="4" itemCode="SY_DRL" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="59" startPos="236" startCount="4" itemCode="SN_RL " converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="60" startPos="240" startCount="4" itemCode="SY_DRLOK  DZ检查回路駆動指令" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="61" startPos="244" startCount="4" itemCode="SN_DZCC  门区检查回路動作状態 [ＯＫ:１]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="62" startPos="248" startCount="4" itemCode="ST_41DGL  ４１ＤＧ信号（ST_41DGS,ST_41DGF選択後）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="63" startPos="252" startCount="4" itemCode="SY_DIRF" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="64" startPos="256" startCount="4" itemCode="SY_SELM5" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="65" startPos="260" startCount="4" itemCode="SY_D5" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="66" startPos="264" startCount="4" itemCode="SS_MCP_D5" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="67" startPos="268" startCount="4" itemCode="SN_5" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="68" startPos="272" startCount="4" itemCode="*SY_DBC 制动器基板检查指令 " converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="69" startPos="276" startCount="4" itemCode="*SY_DCONL " converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="70" startPos="280" startCount="4" itemCode="SY_IGEN  逆变器栅极控制" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="71" startPos="284" startCount="4" itemCode="SY_DEPT  pattern出力指令" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="72" startPos="288" startCount="4" itemCode="SY_WIN *  秤インジェクション指令" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="73" startPos="292" startCount="4" itemCode="SY_WM  秤起動指令" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="74" startPos="296" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="75" startPos="300" startCount="4" itemCode="SY_DSB  控制器线圈指令" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="76" startPos="304" startCount="4" itemCode="SY_DLB  LB駆動指令" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="77" startPos="308" startCount="4" itemCode="SN_LB" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="78" startPos="312" startCount="4" itemCode="SY_DSB1  制动器BK１线圈指令" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="79" startPos="316" startCount="4" itemCode="SY_DSB2  制动器BK２线圈指令" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="80" startPos="320" startCount="4" itemCode="SN_BK1 制动器接点ＢＫ１ [開放：０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="81" startPos="324" startCount="4" itemCode="SN_BK2  制动器接点ＢＫ２ [開放：０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="82" startPos="328" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="83" startPos="332" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="84" startPos="336" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="85" startPos="340" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="86" startPos="344" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="87" startPos="348" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="88" startPos="352" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="89" startPos="356" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="90" startPos="360" startCount="4" itemCode="SY_DDYN 动态制动器线圈励磁指令 " converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="91" startPos="364" startCount="4" itemCode="SN_DYN  ＤＹＮ接点（国内、ＥＬＥＮＥＳＳＡ） [ＯＮ:１]" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="92" startPos="368" startCount="4" itemCode="SW_DOPN  走行中开门" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="93" startPos="372" startCount="4" itemCode="SS_DKC  走行中开门(SLC)" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="94" startPos="376" startCount="4" itemCode="SW_41DGA  ４１ＤＧ ＯＮ异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="95" startPos="380" startCount="4" itemCode="SW_41DGB ４１ＤＧ ＯＦＦ异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="96" startPos="384" startCount="4" itemCode="SW_FCLT1A2A  轿厢前门 ＣＬＴ ＯＮ异常（轿厢１と轿厢２のＯＲ）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="97" startPos="388" startCount="4" itemCode="SW_FCLT1B2B   轿厢前门 ＣＬＴ ＯＦＦ异常[合理性异常＋超时]（轿厢１と轿厢２のＯＲ）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="98" startPos="392" startCount="4" itemCode="SW_FFG1A2A  轿厢前门 ＦＧ ＯＮ异常（轿厢１と轿厢２のＯＲ）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="99" startPos="396" startCount="4" itemCode="SW_FFG1B2B  轿厢前门 ＦＧ ＯＦＦ异常（轿厢１と轿厢２のＯＲ）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="100" startPos="400" startCount="4" itemCode="SW_FOLT1A2A  轿厢前门 ＯＬＴ ＯＮ异常（轿厢１と轿厢２のＯＲ）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="101" startPos="404" startCount="4" itemCode="SW_FOLT1B2B  轿厢前门 ＯＬＴ ＯＦＦ异常（轿厢１と轿厢２のＯＲ）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="102" startPos="408" startCount="4" itemCode="SW_RCLT1A2A  轿厢后门 ＣＬＴ ＯＮ异常（轿厢１と轿厢２のＯＲ）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="103" startPos="412" startCount="4" itemCode="SW_RCLT1B2B  轿厢后门 ＣＬＴ ＯＦＦ异常[合理性异常＋超时]（轿厢１と轿厢２のＯＲ）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="104" startPos="416" startCount="4" itemCode="SW_RFG1A2A  轿厢后门 ＦＧ ＯＮ异常（轿厢１と轿厢２のＯＲ）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="105" startPos="420" startCount="4" itemCode="SW_RFG1B2B  轿厢后门 ＦＧ ＯＦＦ异常（轿厢１と轿厢２のＯＲ）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="106" startPos="424" startCount="4" itemCode="SW_ROLT1A2A  轿厢后门 ＯＬＴ ＯＮ异常（轿厢１と轿厢２のＯＲ）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="107" startPos="428" startCount="4" itemCode="SW_ROLT1B2B  轿厢后门 ＯＬＴ ＯＦＦ异常（轿厢１と轿厢２のＯＲ）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="108" startPos="432" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="109" startPos="436" startCount="4" itemCode="SW_CFRLA  RL断线错误" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="110" startPos="440" startCount="4" itemCode="SW_CFRLB  RL駆動异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="111" startPos="444" startCount="4" itemCode="SW_CF5A  #5 断路异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="112" startPos="448" startCount="4" itemCode="SW_CF5B  #5 駆動异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="113" startPos="452" startCount="4" itemCode="SW_CF5N  #5 強制Off" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="114" startPos="456" startCount="4" itemCode="SF_CF5B  #5 OFF异常検出" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="115" startPos="460" startCount="4" itemCode="SS_CFO  变频器F0 (可选)" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="116" startPos="464" startCount="4" itemCode="SS_COV 变频器過電圧検出 [検出:０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="117" startPos="468" startCount="4" itemCode="SS_CLV  变频器不足電圧検出 [検出:０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="118" startPos="472" startCount="4" itemCode="SS_CHG  充電完了認識 [完了:１]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="119" startPos="476" startCount="4" itemCode="SW_CVER  充電异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="120" startPos="480" startCount="4" itemCode="SD_CTER  CT异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="121" startPos="484" startCount="4" itemCode="SW_CAPC  电容器电容损耗检测" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="122" startPos="488" startCount="4" itemCode="SF_SYER  system错误" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="123" startPos="492" startCount="4" itemCode="SF_TRNSER  通信异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="124" startPos="496" startCount="4" itemCode="SF_PWFH  缺相和逆相检测 客户电源低" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="125" startPos="500" startCount="4" itemCode="SF_PLLH  PLL同步损失" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="126" startPos="504" startCount="4" itemCode="SF_GDFH  conventer 门机板异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="127" startPos="508" startCount="4" itemCode="SF_CTER  变频器側CT 连接异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="128" startPos="512" startCount="4" itemCode="SF_COC  变频器過電流 (S/W)検出" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="129" startPos="516" startCount="4" itemCode="SF_COCH  变频器過電流 (H/W)検出" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="130" startPos="520" startCount="4" itemCode="SF_CASH  变频器短路" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="131" startPos="524" startCount="4" itemCode="SY_DLMSK  LV或FO 锁存（LV通过）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="132" startPos="528" startCount="4" itemCode="SY_DCHDRV  电容充電指令" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="133" startPos="532" startCount="4" itemCode="SY_DESTR  H/Wの异常検出门锁 Latch flag后门指令  IPCク后门指令" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="134" startPos="536" startCount="4" itemCode="SS_LFO  逆变器故障检测 [検出:０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="135" startPos="540" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="136" startPos="544" startCount="4" itemCode="SS_GDF  逆变器  门极 基板异常 [异常:０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="137" startPos="548" startCount="4" itemCode="SS_IOC  逆变器過電圧検出 [検出:０]  アーム短絡 (H/W検出)" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="138" startPos="552" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="139" startPos="556" startCount="4" itemCode="SD_IOCF  過電流 (S/W検出))" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="140" startPos="560" startCount="4" itemCode="SF_ESLD" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="141" startPos="564" startCount="4" itemCode="SF_PWER   原SS_WOCH" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="142" startPos="568" startCount="4" itemCode="SS_VOCH  原SF_PWCCHG" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="143" startPos="572" startCount="4" itemCode="SF_PWCCHGFL  原SS_UOCH" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="144" startPos="576" startCount="4" itemCode="SW_CFOF  变频器F0 (PLL以外)" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="145" startPos="580" startCount="4" itemCode="SF_CVQER  变频器瞬停検出" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="146" startPos="584" startCount="4" itemCode="SD_CVEE  0電流检查" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="147" startPos="588" startCount="4" itemCode="SW_CFD41A  #D41 On异常(韓国)" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="148" startPos="592" startCount="4" itemCode="SW_FSDE1B  轿厢前门 ＳＤＥ ＯＦＦ异常（轿厢１と轿厢２のＯＲ）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="149" startPos="596" startCount="4" itemCode="SW_RSDE1B  轿厢后门 ＳＤＥ ＯＦＦ异常（轿厢１と轿厢２のＯＲ）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="150" startPos="600" startCount="4" itemCode="SF_FSDE" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="151" startPos="604" startCount="4" itemCode="SF_RSDE" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="152" startPos="608" startCount="4" itemCode="SW_CFLBA  #LB断线异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="153" startPos="612" startCount="4" itemCode="SW_CFLBB  #LB駆動异常  off异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="154" startPos="616" startCount="4" itemCode="SW_CFLBN  ＃ＬＢ 強制ＯＦＦ异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="155" startPos="620" startCount="4" itemCode="SW_CFBK1A  ＃ＢＫ１ ＯＮ异常  #BK1闭合异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="156" startPos="624" startCount="4" itemCode="SW_CFBK1B  ＃ＢＫ１ ＯＦＦ异常  #BK1打开异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="157" startPos="628" startCount="4" itemCode="SW_CFBK1N  ＃ＢＫ１ 強制ＯＦＦ异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="158" startPos="632" startCount="4" itemCode="SW_CFBK2A  ＃ＢＫ２ ＯＮ异常  #BK2闭合异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="159" startPos="636" startCount="4" itemCode="SW_CFBK2B  ＃ＢＫ2 ＯＦＦ异常  #BK2打开异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="160" startPos="640" startCount="4" itemCode="SW_CFBK2N  ＃ＢＫ2 強制ＯＦＦ异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="161" startPos="644" startCount="4" itemCode="SD_BKEH   制动器基板异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="162" startPos="648" startCount="4" itemCode="SW_BKER1  ＢＫ１安全回路（ＯＲ信号）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="163" startPos="652" startCount="4" itemCode="SW_BKER2  ＢＫ２安全回路（ＯＲ信号）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="164" startPos="656" startCount="4" itemCode="SW_BKTHM  制动器热保护  制动器ＴＨＭ" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="165" startPos="660" startCount="4" itemCode="SD_AEER  编码器 F相异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="166" startPos="664" startCount="4" itemCode="SD_AZER  编码器 Z相异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="167" startPos="668" startCount="4" itemCode="SD_THNG  磁極未学習" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="168" startPos="672" startCount="4" itemCode="SD_BKZE  制动器 オフセットoffset异常（滑移）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="169" startPos="676" startCount="4" itemCode="SD_BKGE  制动器 ゲイン gain异常（增益）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="170" startPos="680" startCount="4" itemCode="SD_BKOCR  SD_BKOCR 制动器 過負荷検出" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="171" startPos="684" startCount="4" itemCode="SW_MTHM  电动机热保护検出" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="172" startPos="688" startCount="4" itemCode="ST_CVFBCN  变频器电压 FB 连接器断开" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="173" startPos="692" startCount="4" itemCode="SF_DCNER  DCONL合理性异常" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="174" startPos="696" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="175" startPos="700" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="176" startPos="704" startCount="4" itemCode="SN_FDZU" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="177" startPos="708" startCount="4" itemCode="SN_FDZD" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="178" startPos="712" startCount="4" itemCode="SN_FRLU" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="179" startPos="716" startCount="4" itemCode="SN_FRLD" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="180" startPos="720" startCount="4" itemCode="SN_RDZU" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="181" startPos="724" startCount="4" itemCode="SN_RDZD" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="182" startPos="728" startCount="4" itemCode="SN_RRLU" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="183" startPos="732" startCount="4" itemCode="SN_RRLD" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="184" startPos="736" startCount="4" itemCode="SN_UL" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="185" startPos="740" startCount="4" itemCode="SN_DL" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="186" startPos="744" startCount="4" itemCode="SN_UHS" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="187" startPos="748" startCount="4" itemCode="SN_DHS" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="188" startPos="752" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="189" startPos="756" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="190" startPos="760" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="191" startPos="764" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="192" startPos="768" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="193" startPos="772" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="194" startPos="776" startCount="4" itemCode="SN_USR" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="195" startPos="780" startCount="4" itemCode="SN_DSR" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="196" startPos="784" startCount="4" itemCode="SN_1USD" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="197" startPos="788" startCount="4" itemCode="SN_1DSD" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="198" startPos="792" startCount="4" itemCode="SN_FUSD 強制減速用位置点スイッチ＃ＦＵＳＤ（Ｓ３スイッチ）[動作:０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="199" startPos="796" startCount="4" itemCode="SN_FDSD" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="200" startPos="800" startCount="4" itemCode="SW_FDZUA  前门DZU On故障" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="201" startPos="804" startCount="4" itemCode="SW_FDZDA" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="202" startPos="808" startCount="4" itemCode="SW_FRLUA" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="203" startPos="812" startCount="4" itemCode="SW_FRLDA" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="204" startPos="816" startCount="4" itemCode="SW_RDZUA" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="205" startPos="820" startCount="4" itemCode="SW_RDZDA" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="206" startPos="824" startCount="4" itemCode="SW_RRLUA" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="207" startPos="828" startCount="4" itemCode="SW_RRLDA RRLD On故障" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="208" startPos="832" startCount="4" itemCode="SW_ULC   上行超速检测" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="209" startPos="836" startCount="4" itemCode="SW_DLC  下行超速检测" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="210" startPos="840" startCount="4" itemCode="SW_TS3SE tsd進入順序异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="211" startPos="844" startCount="4" itemCode="SW_TSSE  TSD 順序違反" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="212" startPos="848" startCount="4" itemCode="SW_TSPE  TSD 列异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="213" startPos="852" startCount="4" itemCode="SW_UDLB  UL/DL 同时OFF" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="214" startPos="856" startCount="4" itemCode="SW_UDSRB  USR/DSR同时OFF故障" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="215" startPos="860" startCount="4" itemCode="SW_FDZRLX  前门平层减速 合理性异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="216" startPos="864" startCount="4" itemCode="SW_RDZRLX 后门平层减速合理性异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="217" startPos="868" startCount="4" itemCode="SW_DZCCA  DZ检查回路ON故障" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="218" startPos="872" startCount="4" itemCode="SW_DZCCB  DZ检查回路OFF故障" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="219" startPos="876" startCount="4" itemCode="SW_FRLUB  前门 RLU Off故障" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="220" startPos="880" startCount="4" itemCode="SW_FRLDB" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="221" startPos="884" startCount="4" itemCode="SW_RRLUB" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="222" startPos="888" startCount="4" itemCode="SW_RRLDB" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="223" startPos="892" startCount="4" itemCode="SN_UMD  欧州UCMP UMDリレー" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="224" startPos="896" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="225" startPos="900" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="226" startPos="904" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="227" startPos="908" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="228" startPos="912" startCount="4" itemCode="SW_TGBL  过低速" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="229" startPos="916" startCount="4" itemCode="SW_TGBH  过高速" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="230" startPos="920" startCount="4" itemCode="SW_TGBR  逆行" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="231" startPos="924" startCount="4" itemCode="SW_AST  AST ON故障" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="232" startPos="928" startCount="4" itemCode="SS_TGBH  过高速(SLC)" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="233" startPos="932" startCount="4" itemCode="SS_AST  防失速(SLC)" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="234" startPos="936" startCount="4" itemCode="SW_TGBX  电机编码器偏差异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="235" startPos="940" startCount="4" itemCode="SW_LOVR  行程过头検出" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="236" startPos="944" startCount="4" itemCode="SW_DECT  減速時限" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="237" startPos="948" startCount="4" itemCode="SD_PVJP  速度与图形偏差" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="238" startPos="952" startCount="4" itemCode="SD_PTC" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="239" startPos="956" startCount="4" itemCode="SW_RLT  再平层制限時限" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="240" startPos="960" startCount="4" itemCode="ST_SELZ  Selector  偏差检出" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="241" startPos="964" startCount="4" itemCode="ST_LSA  停止中速度検出  タコ2m/min以上:FFH" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="242" startPos="968" startCount="4" itemCode="SD_OVJP   pattern・タコ 偏差异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="243" startPos="972" startCount="4" itemCode="SS_ENCCNF  编码器断線検出 [検出：０]" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="244" startPos="976" startCount="4" itemCode="SW_ENCCNF  编码器断線検出" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="245" startPos="980" startCount="4" itemCode="SW_PTJP  pattern jump 検出" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="246" startPos="984" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="247" startPos="988" startCount="4" itemCode="SW_TSLDE" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="248" startPos="992" startCount="4" itemCode="SW_TGRL  Relevel异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="249" startPos="996" startCount="4" itemCode="SW_LOS  检修时超速検出" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="250" startPos="1000" startCount="4" itemCode="ST_PATL 速度pattern3.8m/min以下" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="251" startPos="1004" startCount="4" itemCode="SW_DECTN 減速時限 (緩停止)" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="252" startPos="1008" startCount="4" itemCode="SW_WGCN  称量断开" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="253" startPos="1012" startCount="4" itemCode="SW_WGE2  走行中秤异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="254" startPos="1016" startCount="4" itemCode="SW_WGWE  秤数值异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="255" startPos="1020" startCount="4" itemCode="SW_WGE1  停止中秤异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="0" startPos="0" startCount="4" itemCode="SW_WGTEMPE  秤温度异常" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="1" startPos="4" startCount="4" itemCode="SW_FTHM1  散热器 過熱异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="2" startPos="8" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="3" startPos="12" startCount="4" itemCode="SW_FTHM" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="4" startPos="16" startCount="4" itemCode="SW_FTHM2  散热器 過熱警告" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="5" startPos="20" startCount="4" itemCode="SW_FTHMCN  散热片热连接器脱落" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="6" startPos="24" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="7" startPos="28" startCount="4" itemCode="SD_HRT  手動過負荷検出" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="8" startPos="32" startCount="4" itemCode="SW_SOCR  過負荷走行" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="9" startPos="36" startCount="4" itemCode="SD_OCR  過負荷走行" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="10" startPos="40" startCount="4" itemCode="SD_TOCR  過負荷走行 (直流分)" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="11" startPos="44" startCount="4" itemCode="SD_SLIT  MELD過負荷" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="12" startPos="48" startCount="4" itemCode="SD_OLR  回生抵抗過負荷" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="13" startPos="52" startCount="4" itemCode="SW_SOL  回生抵抗過負荷" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="14" startPos="56" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="15" startPos="60" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="16" startPos="64" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="17" startPos="68" startCount="4" itemCode="SW_TGRL2  Relevel异常(夹绳器释放阻挡)  夹绳器(開門発車)" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="18" startPos="72" startCount="4" itemCode="SW_STER_RDC2  后门DC2 重故障（連鎖）" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="19" startPos="76" startCount="4" itemCode="SW_STER_RCS2  后门CS2 重故障（連鎖）" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="20" startPos="80" startCount="4" itemCode="SW_STER_FDC2" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="21" startPos="84" startCount="4" itemCode="SW_STER_FCS2" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="22" startPos="88" startCount="4" itemCode="SW_STER_RDC1   后门DC1 重故障（連鎖）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="23" startPos="92" startCount="4" itemCode="SW_STER_RCS1  后门CS1 重故障（連鎖）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="24" startPos="96" startCount="4" itemCode="SW_STER_FDC1" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="25" startPos="100" startCount="4" itemCode="SW_STER_FCS1" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="26" startPos="104" startCount="4" itemCode="SW_STER_ASC1" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="27" startPos="108" startCount="4" itemCode="SW_STER_CNV  变频器 重故障（連鎖） " converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="28" startPos="112" startCount="4" itemCode="SW_STER_TCA  ATCA 重故障（連鎖） TCA 重故障（連鎖）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="29" startPos="116" startCount="4" itemCode="SW_STER_P1ACL   P1ACL 重故障（連鎖） " converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="30" startPos="120" startCount="4" itemCode="SW_STER_ELSV  ES重故障" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(BIT TRACE)" orderNo="31" startPos="124" startCount="4" itemCode="SW_STER_SETS  SETS 重故障（連鎖）" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="0" startPos="0" startCount="1" itemCode="KC_80                 管理起動要求(X0:無､X1:緊急停止､X2停止決定､1X:高速､2X:短階床、3X:低速、4X:MELD、5X:リレベル他)" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="1" startPos="1" startCount="1" itemCode="KC_81      管理起動方向(00:無、01：UP、02：DN)" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="2" startPos="2" startCount="1" itemCode="KC_F43 管理轿厢１前 开门閉指令" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="3" startPos="3" startCount="1" itemCode="KC_R43 管理轿厢１后 开门閉指令" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="4" startPos="4" startCount="1" itemCode="SP_DMY_04" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="5" startPos="5" startCount="1" itemCode="KP_FSYD             制御同步階" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="6" startPos="6" startCount="1" itemCode="KP_FSY            管理用同步階" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="7" startPos="7" startCount="1" itemCode="KP_FSA                アドバンス階" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="8" startPos="8" startCount="1" itemCode="KP_FADV      管理出力用アドバンス階" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="9" startPos="9" startCount="1" itemCode="KP_FTA                     出发层" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="10" startPos="10" startCount="1" itemCode="KP_FTP                   目的层" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="11" startPos="11" startCount="1" itemCode="SP_DMY_0B" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="12" startPos="12" startCount="1" itemCode="SP_DMY_0C" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="13" startPos="13" startCount="1" itemCode="KV_FDOCT1  门机切断信号前门" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="14" startPos="14" startCount="1" itemCode="KV_RDOCT1     门机切断信号后门" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="15" startPos="15" startCount="1" itemCode="SP_DMY_0F" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="16" startPos="16" startCount="2" itemCode="RF_WEIGHT            秤输入信号" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="17" startPos="18" startCount="2" itemCode="RQ_FWGHT_KG         管理秤[Kg]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="18" startPos="20" startCount="2" itemCode="RQ_FWGHT_NM          管理秤[%]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="19" startPos="22" startCount="1" itemCode="MP_WGTEMPE_CODE  秤温度异常信号  正常时00 (0bit:60℃以上時：1、1bit:30～40℃時：1、2bit:30℃未満時：1、3bit:AD转换错误时：1)" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="20" startPos="23" startCount="1" itemCode="MP_DRVMD           运行模式   Service (00:要求無、C1:高自、10:手動、C2:戸開RL、87～89:MELD)" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="21" startPos="24" startCount="1" itemCode="KP_FEA           消防员运行状态(00:消防夫運転条件なし、01:FE運転条件成立、03:FE2運転条件成立)" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="22" startPos="25" startCount="1" itemCode="KP_FERC                消防检出(00:无火灾相关条件、01:火灾相关条件检测)" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="23" startPos="26" startCount="1" itemCode="SP_DMY_1A" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="24" startPos="27" startCount="1" itemCode="SP_DMY_1B" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="25" startPos="28" startCount="4" itemCode="VV_ALL_DISTANCE      全升降行程" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="26" startPos="32" startCount="4" itemCode="VV_CAR_DISTANCE    轿厢現在位置" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="27" startPos="36" startCount="4" itemCode="VV_CPOS_FSY 同步階レベルからの距離" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="28" startPos="40" startCount="1" itemCode="KP_UTSD" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="29" startPos="41" startCount="1" itemCode="KP_DTSD" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="30" startPos="42" startCount="1" itemCode="SF_87   轿厢上ＡＵＴＯ／ＨＡＮＤ开关" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="31" startPos="43" startCount="1" itemCode="SF_HRS      轿厢上栏杆开关" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="32" startPos="44" startCount="1" itemCode="SP_DMY_2C" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="33" startPos="45" startCount="1" itemCode="SP_DMY_2D" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="34" startPos="46" startCount="1" itemCode="SP_DMY_2E" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="35" startPos="47" startCount="1" itemCode="SP_DMY_2F" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="36" startPos="48" startCount="2" itemCode="RQ_CVFB_NM       母线电压标准值" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="37" startPos="50" startCount="1" itemCode="KQ_IFTHM_NM 逆变器温度标准值 (1℃/hex) " converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="38" startPos="51" startCount="1" itemCode="SW_CHGLTT          ＣＨＧマスク" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="39" startPos="52" startCount="1" itemCode="KP_VMLBT ＭＥＬＤ电池电压规格值 (1V/hex)" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="40" startPos="53" startCount="1" itemCode="SW_MLBTL   MELD电池电压低" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="41" startPos="54" startCount="1" itemCode="SW_S79ER          125V地絡検出" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="42" startPos="55" startCount="1" itemCode="SW_LBT     MELD电池脱落检测" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="43" startPos="56" startCount="1" itemCode="KP_E1ERR_CNT_R   E1异常検出回数" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="44" startPos="57" startCount="1" itemCode="SP_DMY_39" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="45" startPos="58" startCount="1" itemCode="SP_DMY_3A" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="46" startPos="59" startCount="1" itemCode="SP_DMY_3B" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="47" startPos="60" startCount="1" itemCode="SP_DMY_3C" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="48" startPos="61" startCount="1" itemCode="SP_DMY_3D" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="49" startPos="62" startCount="1" itemCode="SP_DMY_3E" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="50" startPos="63" startCount="1" itemCode="SP_DMY_3F" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="51" startPos="64" startCount="1" itemCode="MP_ESMD_MAIN エレセーブ運転mode  メイン " converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="52" startPos="65" startCount="1" itemCode="MP_ESMD_SUB エレセーブ運転mode  サブ" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="53" startPos="66" startCount="1" itemCode="SP_DMY_42" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="54" startPos="67" startCount="1" itemCode="SP_DMY_43" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="55" startPos="68" startCount="1" itemCode="SP_DMY_44" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="56" startPos="69" startCount="1" itemCode="SP_DMY_45" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="57" startPos="70" startCount="1" itemCode="SP_DMY_46" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="58" startPos="71" startCount="1" itemCode="SP_DMY_47" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="59" startPos="72" startCount="1" itemCode="SP_DMY_48" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="60" startPos="73" startCount="1" itemCode="SP_DMY_49" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="61" startPos="74" startCount="1" itemCode="SP_DMY_4A" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="62" startPos="75" startCount="1" itemCode="SP_DMY_4B" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="63" startPos="76" startCount="1" itemCode="SP_DMY_4C" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="64" startPos="77" startCount="1" itemCode="SP_DMY_4D" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="65" startPos="78" startCount="1" itemCode="SP_DMY_4E" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="66" startPos="79" startCount="1" itemCode="SP_DMY_4F" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="67" startPos="80" startCount="1" itemCode="SP_EST1            EST 1回検出" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="68" startPos="81" startCount="1" itemCode="SP_EST2            EST 2回検出" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="69" startPos="82" startCount="1" itemCode="SP_SLIP      緊急停止時の空走中" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="70" startPos="83" startCount="1" itemCode="SP_SYSWAIT        系统Wait" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="71" startPos="84" startCount="1" itemCode="SP_SYSWAITL 系统等待超时" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="72" startPos="85" startCount="1" itemCode="SP_NRSL             再起動不能" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="73" startPos="86" startCount="1" itemCode="KP_NRSLRQ    管理再起動不能要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="74" startPos="87" startCount="1" itemCode="SP_DMY_57" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="75" startPos="88" startCount="1" itemCode="SP_DMY_58" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="76" startPos="89" startCount="1" itemCode="SP_DMY_59" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="77" startPos="90" startCount="1" itemCode="SP_DMY_5A" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="78" startPos="91" startCount="1" itemCode="SP_DMY_5B" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="79" startPos="92" startCount="1" itemCode="SP_DMY_5C" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="80" startPos="93" startCount="1" itemCode="SP_DMY_5D" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="81" startPos="94" startCount="1" itemCode="SP_DMY_5E" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="82" startPos="95" startCount="1" itemCode="SP_DMY_5F" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="83" startPos="96" startCount="1" itemCode="SP_DMY_60" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="84" startPos="97" startCount="1" itemCode="SP_DMY_61" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="85" startPos="98" startCount="1" itemCode="SP_DMY_62" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="86" startPos="99" startCount="1" itemCode="SP_DMY_63" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="87" startPos="100" startCount="1" itemCode="SP_DMY_64" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="88" startPos="101" startCount="1" itemCode="SP_DMY_65" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="89" startPos="102" startCount="1" itemCode="SP_DF5A             ５号ON故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="90" startPos="103" startCount="1" itemCode="SP_DF5B           ５ ＯＦＦ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="91" startPos="104" startCount="1" itemCode="SP_DF5N        ５ 強制ＯＦＦ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="92" startPos="105" startCount="1" itemCode="SP_DFLBA           ＬＢ ＯＮ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="93" startPos="106" startCount="1" itemCode="SP_DFLBB         ＬＢ ＯＦＦ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="94" startPos="107" startCount="1" itemCode="SP_DFLBN      ＬＢ 強制ＯＦＦ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="95" startPos="108" startCount="1" itemCode="SP_DFBK1A        ＢＫ１ ＯＮ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="96" startPos="109" startCount="1" itemCode="SP_DFBK1B      ＢＫ１ ＯＦＦ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="97" startPos="110" startCount="1" itemCode="SP_DFBK1N   ＢＫ１ 強制ＯＦＦ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="98" startPos="111" startCount="1" itemCode="SP_DFBK2A         ＢＫ２ ＯＮ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="99" startPos="112" startCount="1" itemCode="SP_DFBK2B       ＢＫ２ ＯＦＦ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="100" startPos="113" startCount="1" itemCode="SP_DFBK2N   ＢＫ２ 強制ＯＦＦ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="101" startPos="114" startCount="1" itemCode="SP_DFRLA           ＲＬ ＯＮ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="102" startPos="115" startCount="1" itemCode="SP_DFRLB          ＲＬ ＯＦＦ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="103" startPos="116" startCount="1" itemCode="SP_DMY_74" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="104" startPos="117" startCount="1" itemCode="SP_RDC2_HNG 后门DC2异常（通讯故障）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="105" startPos="118" startCount="1" itemCode="SP_RCS2_HNG 后门CS2异常（通讯故障）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="106" startPos="119" startCount="1" itemCode="SP_FDC2_HNG 前门DC2异常（通讯故障）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="107" startPos="120" startCount="1" itemCode="SP_FCS2_HNG 前门CS2异常（通讯故障）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="108" startPos="121" startCount="1" itemCode="SP_RDC1_HNG 后门DC1异常（通讯故障）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="109" startPos="122" startCount="1" itemCode="SP_RCS1_HNG 后门CS1异常（通讯故障）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="110" startPos="123" startCount="1" itemCode="SP_FDC1_HNG 前门DC1异常（通讯故障）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="111" startPos="124" startCount="1" itemCode="SP_FCS1_HNG 前门CS1异常（通讯故障）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="112" startPos="125" startCount="1" itemCode="SP_ASC1_HNG ASC1异常（通讯故障）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="113" startPos="126" startCount="1" itemCode="SP_CNV_HNG ハンドシェイク异常 CONVERTER" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="114" startPos="127" startCount="1" itemCode="SP_TCA_HNG ハンドシェイク异常 ATCA" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="115" startPos="128" startCount="1" itemCode="SP_P1ACL_NG P1ACL异常（微机故障）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="116" startPos="129" startCount="1" itemCode="SP_TCA2_HNG  ハンドシェイク异常 TCA" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="117" startPos="130" startCount="1" itemCode="SP_DR_TSDNG          SLC TSD异常" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="118" startPos="131" startCount="1" itemCode="SP_DR_INITF" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="119" startPos="132" startCount="1" itemCode="SP_DR_RBOTNG" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="120" startPos="133" startCount="1" itemCode="SP_DR_MCPWDE          MCP WDT异常" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="121" startPos="134" startCount="1" itemCode="SP_RAMER               制御RAM异常" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="122" startPos="135" startCount="1" itemCode="SP_DMY_87" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="123" startPos="136" startCount="1" itemCode="SP_SSYER              速度設定异常" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="124" startPos="137" startCount="1" itemCode="SP_TSYER                巻設定异常" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="125" startPos="138" startCount="1" itemCode="SP_ASYSER            加速度設定异常" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="126" startPos="139" startCount="1" itemCode="SP_DR_DTER        駆動巻上機定数异常" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="127" startPos="140" startCount="1" itemCode="SP_DR_RAMER             驱动RAM异常" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="128" startPos="141" startCount="1" itemCode="SP_DMY_8D" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="129" startPos="142" startCount="1" itemCode="SP_DMY_8E" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="130" startPos="143" startCount="1" itemCode="SP_DMY_8F" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="131" startPos="144" startCount="1" itemCode="SP_SELD                选层器故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="132" startPos="145" startCount="1" itemCode="KP_SLZC         选层器偏差发生次数" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="133" startPos="146" startCount="1" itemCode="KP_SLQC" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="134" startPos="147" startCount="1" itemCode="SP_FLNG                平层不良检出" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="135" startPos="148" startCount="1" itemCode="SW_TGML                 MELD逆行" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="136" startPos="149" startCount="1" itemCode="SW_OPJP          Pattern jump 异常" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="137" startPos="150" startCount="1" itemCode="SW_VRSFL          可変速驱动程序故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="138" startPos="151" startCount="1" itemCode="SW_ITRTQ      地震恢复扭矩诊断异常" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="139" startPos="152" startCount="1" itemCode="SW_ITRWG             地震恢复秤异常" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="140" startPos="153" startCount="1" itemCode="SW_29OFFM              29#OFF（门锁？）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="141" startPos="154" startCount="1" itemCode="SP_DMY_9A" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="142" startPos="155" startCount="1" itemCode="SP_DMY_9B" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="143" startPos="156" startCount="1" itemCode="SP_DMY_9C" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="144" startPos="157" startCount="1" itemCode="SP_DMY_9D" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="145" startPos="158" startCount="1" itemCode="SP_DMY_9E" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="146" startPos="159" startCount="1" itemCode="SP_DMY_9F" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="147" startPos="160" startCount="1" itemCode="SP_D41DGA         ４１ＤＧ ＯＮ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="148" startPos="161" startCount="1" itemCode="SP_D41DGB        ４１ＤＧ ＯＦＦ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="149" startPos="162" startCount="1" itemCode="SP_DFCLT1A 轿厢１前 CLT On故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="150" startPos="163" startCount="1" itemCode="SP_DFCLT1B 轿厢１前 CLT Off故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="151" startPos="164" startCount="1" itemCode="SP_DFFG1A  轿厢１前 FG On故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="152" startPos="165" startCount="1" itemCode="SP_DFFG1B  轿厢１前 FG Off故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="153" startPos="166" startCount="1" itemCode="SP_DFOLT1A 轿厢１前 OLT On故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="154" startPos="167" startCount="1" itemCode="SP_DFOLT1B 轿厢１前 OLT Off故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="155" startPos="168" startCount="1" itemCode="SP_DFCLT2A 轿厢２前 CLT On故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="156" startPos="169" startCount="1" itemCode="SP_DFCLT2B 轿厢２前 CLT Off故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="157" startPos="170" startCount="1" itemCode="SP_DFFG2A  轿厢２前 CLT On故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="158" startPos="171" startCount="1" itemCode="SP_DFFG2B  轿厢２前 CLT Off故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="159" startPos="172" startCount="1" itemCode="SP_DFOLT2A  轿厢２前 OLT On故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="160" startPos="173" startCount="1" itemCode="SP_DFOLT2B  轿厢２前 OLT Off故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="161" startPos="174" startCount="1" itemCode="SP_DRCLT1A      轿厢１后 CLT On故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="162" startPos="175" startCount="1" itemCode="SP_DRCLT1B     轿厢１后 CLT Off故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="163" startPos="176" startCount="1" itemCode="SP_DRFG1A        轿厢１后 FG On故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="164" startPos="177" startCount="1" itemCode="SP_DRFG1B       轿厢１后 FG Off故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="165" startPos="178" startCount="1" itemCode="SP_DROLT1A      轿厢１后 OLT On故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="166" startPos="179" startCount="1" itemCode="SP_DROLT1B     轿厢１后 OLT Off故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="167" startPos="180" startCount="1" itemCode="SP_DRCLT2A      轿厢２后 CLT On故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="168" startPos="181" startCount="1" itemCode="SP_DRCLT2B     轿厢２后 CLT Off故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="169" startPos="182" startCount="1" itemCode="SP_DRFG2A        轿厢２后 FG On故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="170" startPos="183" startCount="1" itemCode="SP_DRFG2B       轿厢２后 FG Off故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="171" startPos="184" startCount="1" itemCode="SP_DROLT2A      轿厢２后 OLT On故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="172" startPos="185" startCount="1" itemCode="SP_DROLT2B     轿厢２后 OLT Off故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="173" startPos="186" startCount="1" itemCode="SW_BKOC12              制动器過電流" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="174" startPos="187" startCount="1" itemCode="SW_BKNC12                 DC-CT断線 " converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="175" startPos="188" startCount="1" itemCode="SW_BKBD12           制动器线圈断线" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="176" startPos="189" startCount="1" itemCode="SW_BKSC12           制动器线圈短路" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="177" startPos="190" startCount="1" itemCode="SW_BKCE12                  DC-CT异常" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="178" startPos="191" startCount="1" itemCode="SW_BKAS12         制动器线圈全短路" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="179" startPos="192" startCount="1" itemCode="SW_UDHSAB                UHS/DHS故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="180" startPos="193" startCount="1" itemCode="SW_UDLUDSRX   UL/DLとUSR/DSR  合理性异常" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="181" startPos="194" startCount="1" itemCode="SP_DMY_C2" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="182" startPos="195" startCount="1" itemCode="SP_DMY_C3" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="183" startPos="196" startCount="1" itemCode="SP_DMY_C4" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="184" startPos="197" startCount="1" itemCode="SP_DMY_C5" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="185" startPos="198" startCount="1" itemCode="SP_DMY_C6" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="186" startPos="199" startCount="1" itemCode="SP_DMY_C7" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="187" startPos="200" startCount="1" itemCode="SP_DMY_C8" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="188" startPos="201" startCount="1" itemCode="SP_DMY_C9" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="189" startPos="202" startCount="1" itemCode="SP_DMY_CA" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="190" startPos="203" startCount="1" itemCode="SP_DMY_CB" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="191" startPos="204" startCount="1" itemCode="SP_DMY_CC" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="192" startPos="205" startCount="1" itemCode="SP_DMY_CD" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="193" startPos="206" startCount="1" itemCode="SP_DMY_CE" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="194" startPos="207" startCount="1" itemCode="SP_DMY_CF" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="195" startPos="208" startCount="1" itemCode="SP_DMY_D0" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="196" startPos="209" startCount="1" itemCode="SP_DMY_D1" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="197" startPos="210" startCount="1" itemCode="SP_DMY_D2" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="198" startPos="211" startCount="1" itemCode="SP_DMY_D3" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="199" startPos="212" startCount="1" itemCode="SP_DMY_D4" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="200" startPos="213" startCount="1" itemCode="SP_DMY_D5" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="201" startPos="214" startCount="1" itemCode="KP_UDLCN_CNT" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="202" startPos="215" startCount="1" itemCode="*KP_TGVB_CNT" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="203" startPos="216" startCount="2" itemCode="RP_TD5RQ      ５ＲＱドライブ指令投入時間" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="204" startPos="218" startCount="2" itemCode="RP_TDLB         ＬＢドライブ指令投入時間" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="205" startPos="220" startCount="2" itemCode="RP_TDIGEN    ＩＧＥＮドライブ指令投入時間" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="206" startPos="222" startCount="2" itemCode="RP_ST_TIME                    抵达时间" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="207" startPos="224" startCount="4" itemCode="WP_ARUN_UP             Auto UP走行回数" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="208" startPos="228" startCount="4" itemCode="WP_ARUN_DN             Auto DN走行回数" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="209" startPos="232" startCount="4" itemCode="WP_ARUN_UPR     Auto UP走行回数（累计）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="210" startPos="236" startCount="4" itemCode="WP_ARUN_DNR     Auto DN走行回数（累计）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="211" startPos="240" startCount="1" itemCode="SS_CCT10S  ＣＣ ＷＤＴ 10秒计时器(ＣＣ側）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="212" startPos="241" startCount="1" itemCode="SS_CWDTRC  ＣＣ ＷＤＴ重试次数" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="213" startPos="242" startCount="1" itemCode="SS_CWDTOK          ＣＣ ＷＤＴ Ｏ．Ｋ．" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="214" startPos="243" startCount="1" itemCode="SS_CCWC5        ＣＣ ＷＤＴ ５次动作检出" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="215" startPos="244" startCount="1" itemCode="SS_CCWC4        ＣＣ ＷＤＴ ４次动作检出" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="216" startPos="245" startCount="1" itemCode="SS_CCWC3        ＣＣ ＷＤＴ ３次动作检出" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="217" startPos="246" startCount="1" itemCode="SS_CCWC2        ＣＣ ＷＤＴ ２次动作检出" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="218" startPos="247" startCount="1" itemCode="SS_CCWC1        ＣＣ ＷＤＴ １次动作检出" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="219" startPos="248" startCount="1" itemCode="SS_MCPT10S  ＭＣＰ ＷＤＴ １０Ｓｅｃタイマ(ＭＣＰ側）" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="220" startPos="249" startCount="1" itemCode="SS_MWDTH              ＭＣＰ ＷＤＴ正常" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="221" startPos="250" startCount="1" itemCode="SS_MWDTOK         ＭＣＰ ＷＤＴ Ｏ．Ｋ．" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="222" startPos="251" startCount="1" itemCode="SS_MRTYRQ  ＭＣＰからのreset retry要求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="223" startPos="252" startCount="1" itemCode="UQ_VESCMPU  FSYDが示すＤＺＵ开关动作学习值上位" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="224" startPos="254" startCount="1" itemCode="UQ_VESCMPD	 FSYDが示すＤＺＤ开关动作学习值下位" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="225" startPos="254" startCount="1" itemCode="UQ_VESCMPD	 FSYDが示すＤＺＤ开关动作学习值上位" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="226" startPos="255" startCount="1" itemCode="UQ_VESCMPD	 FSYDが示すＤＺＤ开关动作学习值下位" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="227" startPos="256" startCount="1" itemCode="KP_VTOP                  高自速度コード" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="228" startPos="257" startCount="1" itemCode="KP_ACC                      定格加速度" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="229" startPos="258" startCount="1" itemCode="KP_PTSH                  参数PTSH" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="230" startPos="259" startCount="1" itemCode="KP_TSSH                  参数TSSH" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="231" startPos="260" startCount="1" itemCode="KP_HTOP                   手動速度コード" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="232" startPos="261" startCount="1" itemCode="SP_WINSTA                 启动称有效指令" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="233" startPos="262" startCount="1" itemCode="SP_WINLND  平层時称量インジェクション有効指令" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="234" startPos="263" startCount="1" itemCode="SW_SETSBFSP           SETS缓冲器速度限制" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="235" startPos="264" startCount="1" itemCode="SP_ASLEEP                     待机中" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="236" startPos="265" startCount="1" itemCode="SP_ASNEAR                   自動休止間近" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="237" startPos="266" startCount="1" itemCode="SP_PCHK     安全回路继电器ON  checkmode" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="238" startPos="267" startCount="1" itemCode="SP_PCHK_C5            5 ONcheckmode" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="239" startPos="268" startCount="1" itemCode="SP_PCHK_DYN         DYN ON  checkmode" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="240" startPos="269" startCount="1" itemCode="SP_PCHK_SETS       SETS ON  checkmode" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="241" startPos="270" startCount="1" itemCode="PP_FSHFT       FSYD计数器参数FSHFT" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="242" startPos="271" startCount="1" itemCode="KS_DNSH                  参数DNSH" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="243" startPos="272" startCount="1" itemCode="RS_NLWT               参数NLWT上位" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="244" startPos="273" startCount="1" itemCode="RS_NLWT               参数NLWT下位" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="245" startPos="274" startCount="1" itemCode="RS_BLWT              参数BLWT 上位" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="246" startPos="275" startCount="1" itemCode="RS_BLWT              参数BLWT 下位" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="247" startPos="276" startCount="1" itemCode="KS_WGHO                   参数WGHO" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="248" startPos="277" startCount="1" itemCode="KS_WGHG                   参数WGHG" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="249" startPos="278" startCount="1" itemCode="KS_BLSH                   参数BLSH" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="250" startPos="279" startCount="1" itemCode="SP_DMY_117" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="251" startPos="280" startCount="8" itemCode="PowerOnTime" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="252" startPos="288" startCount="1" itemCode="SW_HRSA                      HRS ON故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="253" startPos="289" startCount="1" itemCode="SW_87A                        87 ON故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="254" startPos="290" startCount="1" itemCode="SW_87B                       87 OFF故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="255" startPos="291" startCount="1" itemCode="SP_SSUA                  ＳＳＵ ＯＮ异常" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="256" startPos="292" startCount="1" itemCode="SP_SSDA                  ＳＳＤ ＯＮ异常" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="257" startPos="293" startCount="1" itemCode="SP_FSSUC1A  轿厢1 或轿厢2 前轿厢上ＳＳＵ ＯＮ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="258" startPos="294" startCount="1" itemCode="SP_FSSDC1A  轿厢1 或轿厢2 前轿厢上ＳＳＤ ＯＮ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="259" startPos="295" startCount="1" itemCode="SP_FSSUC2A  轿厢1 或轿厢2 前轿厢内ＳＳＵ ＯＮ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="260" startPos="296" startCount="1" itemCode="SP_FSSDC2A  轿厢1 或轿厢2 前轿厢内ＳＳＤ ＯＮ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="261" startPos="297" startCount="1" itemCode="SP_RSSUC1A  轿厢1 或轿厢2 后轿厢上ＳＳＵ ＯＮ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="262" startPos="298" startCount="1" itemCode="SP_RSSDC1A  轿厢1 或轿厢2 后轿厢上ＳＳＤ ＯＮ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="263" startPos="299" startCount="1" itemCode="SP_RSSUC2A  轿厢1 或轿厢2 后轿厢内ＳＳＵ ＯＮ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="264" startPos="300" startCount="1" itemCode="SP_RSSDC2A  轿厢1 或轿厢2 后轿厢内ＳＳＤ ＯＮ故障" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="265" startPos="301" startCount="1" itemCode="SP_HDRNA                ＨＤＲＮ ＯＮ异常" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="266" startPos="302" startCount="1" itemCode="SP_HDRNB              ＨＤＲＮ ＯＦＦ异常" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="267" startPos="303" startCount="1" itemCode="SP_DMY_12F" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="268" startPos="304" startCount="1" itemCode="SS_RM             Ｐ１板ＲＭ开关" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="269" startPos="305" startCount="1" itemCode="SP_DMY_131" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="270" startPos="306" startCount="1" itemCode="SS_FWR          Ｐ１板ＦＷＲ开关" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="271" startPos="307" startCount="1" itemCode="SS_RFWR       Ｐ１板ＲＦＷＲ开关" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="272" startPos="308" startCount="1" itemCode="SS_DCB          Ｐ１板ＤＣＢ开关" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="273" startPos="309" startCount="1" itemCode="SS_DOOR       Ｐ１板ＤＯＯＲ开关" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="274" startPos="310" startCount="1" itemCode="SN_DOOR         门机ＤＯＯＲ开关" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="275" startPos="311" startCount="1" itemCode="SN_MELDEN                ＭＥＬＤ断开请求" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="276" startPos="312" startCount="1" itemCode="SP_DMY_138" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="277" startPos="313" startCount="1" itemCode="SP_DMY_139" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="278" startPos="314" startCount="1" itemCode="SP_DMY_13A" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="279" startPos="315" startCount="1" itemCode="SP_DMY_13B" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="280" startPos="316" startCount="1" itemCode="KP_START_TIME_HOUR                   時" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="281" startPos="317" startCount="1" itemCode="KP_START_TIME_MIN                    分" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="282" startPos="318" startCount="1" itemCode="KP_START_TIME_SEC                    秒" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD132数据内容(SNATSHOT)" orderNo="283" startPos="319" startCount="1" itemCode="KP_START_TIME_KEY              Key Time" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="0" startPos="0" startCount="1" itemCode="yobi1[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="1" startPos="1" startCount="1" itemCode="yobi2[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="2" startPos="2" startCount="1" itemCode="yobi3[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="3" startPos="3" startCount="1" itemCode="MP_PTMD   Patternmode  01：待機、02：ジャーク、03：加速、04：加速丸め、05：一定速、06：減速丸め、07：減速、08：着床、17：かご揺すり検知減速丸め、18：手動着床(緩停止)[%d] " converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="4" startPos="4" startCount="4" itemCode="WQ_VPAT  制御 Pattern指令  0.01m/min/digit[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="5" startPos="8" startCount="4" itemCode="WQ_VTSD   ＴＳＤ Pattern指令  0.01m/min/digit[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="6" startPos="12" startCount="4" itemCode="WQ_VPOUT   制御 Pattern指令 0.01m/min/digit  [%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="7" startPos="16" startCount="4" itemCode="WP_SYNC  同步位置 1mm/digit[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="8" startPos="20" startCount="4" itemCode="WQ_RDST  剩余距离[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="9" startPos="24" startCount="4" itemCode="WQ_RDST_TLP  ＴＬＰ剩余距离 1mm/digit[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="10" startPos="28" startCount="4" itemCode="WQ_VGTNR   タコ  0.01m/min/digit [%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="11" startPos="32" startCount="1" itemCode="MS_FDZ_LS( D3bit：DZU、D0bit：DZD) [%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="12" startPos="33" startCount="1" itemCode="MS_FRL_LS(D3bit：RLU、D0bit：RLD)[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="13" startPos="34" startCount="1" itemCode="MS_RDZ_LS(D3bit：DZU、D0bit：DZD)[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="14" startPos="35" startCount="1" itemCode="MS_RRL_LS(D3bit：RLU、D0bit：RLD)[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="15" startPos="36" startCount="1" itemCode="yobi4[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="16" startPos="37" startCount="1" itemCode="yobi5[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="17" startPos="38" startCount="1" itemCode="yobi6[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="18" startPos="39" startCount="1" itemCode="yobi7[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="19" startPos="40" startCount="2" itemCode="RS_FDZ_LD[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="20" startPos="42" startCount="2" itemCode="RS_FRL_LD[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="21" startPos="44" startCount="2" itemCode="RS_RDZ_LD[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="22" startPos="46" startCount="2" itemCode="RS_RRL_LD[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="23" startPos="48" startCount="4" itemCode="WP_TMP1[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="24" startPos="52" startCount="4" itemCode="WP_TMP2[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="25" startPos="56" startCount="4" itemCode="WP_TMP3[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="25ms TRACE" orderNo="26" startPos="60" startCount="4" itemCode="WP_TMP4[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="0" startPos="0" startCount="1" itemCode="MP_DRVMOD  运行状态   Service 00：没有启动、01：急停、02：正常停止、03：紧急減速、10：高速起动中、11：返平层启动中[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="1" startPos="1" startCount="1" itemCode="MP_TR_ANS  起動種別回答 00：没有启动、10：高速起动中、11：返平层运行中、[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="2" startPos="2" startCount="1" itemCode="KP_RNGO  启动方向 00：停止检出、01：上行检出、02：下行检出[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="3" startPos="3" startCount="1" itemCode="kp_yobi_3[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="4" startPos="4" startCount="1" itemCode="kp_yobi_4[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="5" startPos="5" startCount="1" itemCode="kp_yobi_5[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="6" startPos="6" startCount="1" itemCode="kp_yobi_6[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="7" startPos="7" startCount="1" itemCode="kp_yobi_7[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="8" startPos="8" startCount="1" itemCode="KP_FDOQ  轿厢１前 DOQ信号[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="9" startPos="9" startCount="1" itemCode="KP_RDOQ   轿厢１后 DOQ信号[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="10" startPos="10" startCount="1" itemCode="KP_FDOOR  轿厢１前 开门閉指令[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="11" startPos="11" startCount="1" itemCode="KP_RDOOR  轿厢１后 开门閉指令[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="12" startPos="12" startCount="1" itemCode="kp_yobi_C[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="13" startPos="13" startCount="1" itemCode="kp_yobi_D[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="14" startPos="14" startCount="1" itemCode="kp_yobi_E[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="15" startPos="15" startCount="1" itemCode="kp_yobi_F[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="16" startPos="16" startCount="1" itemCode="KP_PWOF  電源検出[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="17" startPos="17" startCount="1" itemCode="KP_PW_CLASS  電源種別[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="18" startPos="18" startCount="1" itemCode="kp_yobi_12[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="19" startPos="19" startCount="1" itemCode="kp_yobi_13[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="20" startPos="20" startCount="1" itemCode="kp_yobi_14[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="21" startPos="21" startCount="1" itemCode="kp_yobi_15[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="22" startPos="22" startCount="1" itemCode="kp_yobi_16[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="23" startPos="23" startCount="1" itemCode="kp_yobi_17[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="24" startPos="24" startCount="1" itemCode="KP_ABSPOS   轿厢絶対位置[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="25" startPos="25" startCount="1" itemCode="kp_yobi_19[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="26" startPos="26" startCount="1" itemCode="kp_yobi_1A[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="27" startPos="27" startCount="1" itemCode="kp_yobi_1B[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="28" startPos="28" startCount="1" itemCode="kp_yobi_1C[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="29" startPos="29" startCount="1" itemCode="kp_yobi_1D[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="30" startPos="30" startCount="1" itemCode="kp_yobi_1E[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="31" startPos="31" startCount="1" itemCode="kp_yobi_1F[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="32" startPos="32" startCount="1" itemCode="kp_yobi_20[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="33" startPos="33" startCount="1" itemCode="kp_yobi_21[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="34" startPos="34" startCount="1" itemCode="KP_SKDTL  轿厢摇晃级别[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="35" startPos="35" startCount="1" itemCode="MP_SETS_ST  SETS现状[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="36" startPos="36" startCount="1" itemCode="MP_SETS_MT   SETS->CC收到[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="37" startPos="37" startCount="1" itemCode="MP_CC_MTP   CC->SETS发送[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="38" startPos="38" startCount="1" itemCode="kp_yobi_26[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="39" startPos="39" startCount="1" itemCode="kp_yobi_27[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="40" startPos="40" startCount="1" itemCode="kp_yobi_28[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="41" startPos="41" startCount="1" itemCode="kp_yobi_29[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="42" startPos="42" startCount="1" itemCode="MP_ES_PARQ  ＥＳ停电操作请求[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="43" startPos="43" startCount="1" itemCode="MP_ES_PAACK  ＥＳ停電運転回答[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="44" startPos="44" startCount="1" itemCode="MP_ES_PASOC  ＥＳ剩余电量[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="45" startPos="45" startCount="1" itemCode="kp_yobi_2D[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="46" startPos="46" startCount="1" itemCode="kp_yobi_2E[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="47" startPos="47" startCount="1" itemCode="kp_yobi_2F[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="48" startPos="48" startCount="1" itemCode="KP_80  管理起動要求[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="49" startPos="49" startCount="1" itemCode="KP_81  管理起動方向[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="50" startPos="50" startCount="1" itemCode="KP_F43  管理轿厢１前 开门閉指令[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="51" startPos="51" startCount="1" itemCode="KP_R43  管理轿厢１后 开门閉指令[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="52" startPos="52" startCount="1" itemCode="KP_PWOFRQ  管理ＭＥＬＤ断电指令[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="53" startPos="53" startCount="1" itemCode="KP_ESOFRQ  管理节电请求[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="54" startPos="54" startCount="1" itemCode="kp_yobi_36[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="55" startPos="55" startCount="1" itemCode="kp_yobi_37[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="56" startPos="56" startCount="1" itemCode="kp_yobi_38[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="57" startPos="57" startCount="1" itemCode="kp_yobi_39[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="58" startPos="58" startCount="1" itemCode="kp_yobi_3A[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="59" startPos="59" startCount="1" itemCode="kp_yobi_3B[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="60" startPos="60" startCount="1" itemCode="kp_yobi_3C[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="61" startPos="61" startCount="1" itemCode="kp_yobi_3D[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="62" startPos="62" startCount="1" itemCode="kp_yobi_3E[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="50ms TRACE" orderNo="63" startPos="63" startCount="1" itemCode="kp_yobi_3F[%d]" converterId="HexConverter"/>
+	<AuxSubTableItem libId="default" tableCode="P1故障代码Status" orderNo="0" startPos="0" startCount="1" itemCode="SP_60F" converterId="ConditionConverter" converterParam="1,自动,0,手动"/>
+	<AuxSubTableItem libId="default" tableCode="P1故障代码Status" orderNo="1" startPos="1" startCount="1" itemCode="ST_DZF" converterId="ConditionConverter" converterParam="1,门区内,0,门区外"/>
+	<AuxSubTableItem libId="default" tableCode="P1故障代码Status" orderNo="2" startPos="2" startCount="1" itemCode="SN_5" converterId="ConditionConverter" converterParam="1,#5吸合,0,#5断开"/>
+	<AuxSubTableItem libId="default" tableCode="P1故障代码Status" orderNo="3" startPos="3" startCount="1" itemCode="SN_LB" converterId="ConditionConverter" converterParam="1,#LB吸合,0,#LB断开"/>
+	<AuxSubTableItem libId="default" tableCode="P1故障代码Status" orderNo="4" startPos="4" startCount="1" itemCode="SN_BK1" converterId="ConditionConverter" converterParam="1,BK1抱闸,0,BK1松闸"/>
+	<AuxSubTableItem libId="default" tableCode="P1故障代码Status" orderNo="5" startPos="5" startCount="1" itemCode="SN_BK2" converterId="ConditionConverter" converterParam="1,BK2抱闸,0,BK2松闸"/>
+	<AuxSubTableItem libId="default" tableCode="P1故障代码Status" orderNo="6" startPos="6" startCount="1" itemCode="ST_41DGL" converterId="ConditionConverter" converterParam="1,门锁闭合,0,门锁断开"/>
+	<AuxSubTableItem libId="default" tableCode="P1故障代码Status" orderNo="7" startPos="7" startCount="1" itemCode="SN_RL" converterId="ConditionConverter" converterParam="1,再平层动作,0,再平层未动作"/>
+	<AuxSubTableItem libId="default" tableCode="控制信号" orderNo="0" startPos="0" startCount="1" itemName="41DG " converterId="ConditionConverter" converterParam="1,门关好"/>
+	<AuxSubTableItem libId="default" tableCode="控制信号" orderNo="1" startPos="1" startCount="1" itemName="前门CLT" converterId="ConditionConverter" converterParam="1,轿门关门到位"/>
+	<AuxSubTableItem libId="default" tableCode="控制信号" orderNo="2" startPos="2" startCount="1" itemName="前门OLT" converterId="ConditionConverter" converterParam="0,轿门开门到位"/>
+	<AuxSubTableItem libId="default" tableCode="控制信号" orderNo="3" startPos="3" startCount="1" itemName="前门开门指令" converterId="ConditionConverter" converterParam="1,有开门指令"/>
+	<AuxSubTableItem libId="default" tableCode="控制信号" orderNo="4" startPos="4" startCount="1" itemName="前门关门指令" converterId="ConditionConverter" converterParam="1,有关门指令"/>
+	<AuxSubTableItem libId="default" tableCode="控制信号" orderNo="5" startPos="5" startCount="1" itemName="D5" converterId="ConditionConverter" converterParam="1,电梯启动"/>
+	<AuxSubTableItem libId="default" tableCode="控制信号" orderNo="6" startPos="6" startCount="1" itemName="5" converterId="ConditionConverter" converterParam="1,电梯启动"/>
+	<AuxSubTableItem libId="default" tableCode="控制信号" orderNo="7" startPos="7" startCount="1" itemName="DLB" converterId="ConditionConverter" converterParam="1,电梯启动"/>
+	<AuxSubTableItem libId="default" tableCode="控制信号" orderNo="8" startPos="8" startCount="1" itemName="LB" converterId="ConditionConverter" converterParam="1,电梯启动"/>
+	<AuxSubTableItem libId="default" tableCode="控制信号" orderNo="9" startPos="9" startCount="1" itemName="DSB" converterId="ConditionConverter" converterParam="1,电梯启动"/>
+	<AuxSubTableItem libId="default" tableCode="控制信号" orderNo="10" startPos="10" startCount="1" itemName="BK1" converterId="ConditionConverter" converterParam="0,松闸"/>
+	<AuxSubTableItem libId="default" tableCode="控制信号" orderNo="11" startPos="11" startCount="1" itemName="BK2" converterId="ConditionConverter" converterParam="0,松闸"/>
+	<AuxSubTableItem libId="default" tableCode="控制信号" orderNo="12" startPos="12" startCount="1" itemName="后门CLT" converterId="ConditionConverter" converterParam="1,轿内关门到位"/>
+	<AuxSubTableItem libId="default" tableCode="控制信号" orderNo="13" startPos="13" startCount="1" itemName="后门OLT" converterId="ConditionConverter" converterParam="0,轿门开门到位"/>
+	<AuxSubTableItem libId="default" tableCode="控制信号" orderNo="14" startPos="14" startCount="1" itemName="后门开门指令" converterId="ConditionConverter" converterParam="1,有开门指令"/>
+	<AuxSubTableItem libId="default" tableCode="控制信号" orderNo="15" startPos="15" startCount="1" itemName="后门关门指令" converterId="ConditionConverter" converterParam="1,有关门指令"/>
+	<AuxSubTableItem libId="default" tableCode="井道信号" orderNo="0" startPos="0" startCount="1" itemName="USR" converterId="ConditionConverter" converterParam="0,上终端减速开关被切断"/>
+	<AuxSubTableItem libId="default" tableCode="井道信号" orderNo="1" startPos="1" startCount="1" itemName="DSR" converterId="ConditionConverter" converterParam="0,下终端减速开关被切断"/>
+	<AuxSubTableItem libId="default" tableCode="井道信号" orderNo="2" startPos="2" startCount="1" itemName="1USD" converterId="ConditionConverter" converterParam="0,上终端减速开关被切断"/>
+	<AuxSubTableItem libId="default" tableCode="井道信号" orderNo="3" startPos="3" startCount="1" itemName="1DSD" converterId="ConditionConverter" converterParam="0,下终端减速开关被切断"/>
+	<AuxSubTableItem libId="default" tableCode="井道信号" orderNo="4" startPos="4" startCount="1" itemName="SN_TS5" converterId="ConditionConverter" converterParam="0,0"/>
+	<AuxSubTableItem libId="default" tableCode="井道信号" orderNo="5" startPos="5" startCount="1" itemName="SN_TS6" converterId="ConditionConverter" converterParam="0,0"/>
+	<AuxSubTableItem libId="default" tableCode="井道信号" orderNo="6" startPos="6" startCount="1" itemName="UL" converterId="ConditionConverter" converterParam="0,上极限开关被切断"/>
+	<AuxSubTableItem libId="default" tableCode="井道信号" orderNo="7" startPos="7" startCount="1" itemName="DL" converterId="ConditionConverter" converterParam="0,下极限开关被切断"/>
+	<AuxSubTableItem libId="default" tableCode="井道信号" orderNo="8" startPos="8" startCount="1" itemName="前DZU" converterId="ConditionConverter" converterParam="1,前门再平层DZU有效"/>
+	<AuxSubTableItem libId="default" tableCode="井道信号" orderNo="9" startPos="9" startCount="1" itemName="前DZD" converterId="ConditionConverter" converterParam="1,前门再平层DZD有效"/>
+	<AuxSubTableItem libId="default" tableCode="井道信号" orderNo="10" startPos="10" startCount="1" itemName="后DZU" converterId="ConditionConverter" converterParam="1,后门再平层DZU有效"/>
+	<AuxSubTableItem libId="default" tableCode="井道信号" orderNo="11" startPos="11" startCount="1" itemName="后DZD" converterId="ConditionConverter" converterParam="1,后门再平层DZD有效"/>
+	<AuxSubTableItem libId="default" tableCode="井道信号" orderNo="12" startPos="12" startCount="1" itemName="前RLU" converterId="ConditionConverter" converterParam="1,前门再平层RZU有效"/>
+	<AuxSubTableItem libId="default" tableCode="井道信号" orderNo="13" startPos="13" startCount="1" itemName="前RLD" converterId="ConditionConverter" converterParam="1,前门再平层RZD有效"/>
+	<AuxSubTableItem libId="default" tableCode="井道信号" orderNo="14" startPos="14" startCount="1" itemName="后RLU" converterId="ConditionConverter" converterParam="1,后门再平层RZU有效"/>
+	<AuxSubTableItem libId="default" tableCode="井道信号" orderNo="15" startPos="15" startCount="1" itemName="后RLD" converterId="ConditionConverter" converterParam="1,后门再平层RZD有效"/>
+</AuxSubTableItems>

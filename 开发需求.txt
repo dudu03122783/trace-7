@@ -1,0 +1,93 @@
+学习这文档ipynb，大致的数据处理。我要求是：
+1.数据源是示例c:\Users\Administrator\Desktop\trace ver 3.0\苏州中海数据跟踪控制.txt 折个中TXT文件。 我要求要求导入数据源
+2. 数据源中有4部分数据，a. 比特数据、b 25ms数据、c.50ms 数据、d、快照数据，需要对数据进行分拆成4部分
+### TXT文件格式说明
+
+电梯控制系统的数据文件采用文本格式，主要包含以下几个数据段：
+
+- **控制部分**：包含时间戳信息
+- **比特部分**：包含各种开关和状态信号的比特数据
+- **数值25ms部分**：包含25毫秒周期采样的数值数据
+- **数值50ms部分**：包含50毫秒周期采样的数值数据
+- **快照部分**：包含关键时刻的系统状态快照
+
+### 2.2 数据段标识
+
+每个数据段都有明确的标识符：
+- `控制` - 标识控制数据段开始,时间戳格式"2023-10-15 14:30:25"
+- `比特` - 标识比特数据段开始
+- `数值25ms` - 标识25ms数值数据段开始
+- `数值50ms` - 标识50ms数值数据段开始
+- `快照` - 标识快照数据段开始
+
+
+3.然后，生成网页，侧边栏有5个部分内容，分别是：数据导入、比特数据、25ms数据、50ms数据、快照数据。
+
+
+
+3.1比特数据结构介绍：
+a.这个数据的信号名：信号名例如：例如SN_**等等、
+原始数据格式：
+SN_29         00000000 00000000 00000000 00000000 *-SS_29LT       00000000 00000000 00000011 11111111 
+  SN_PCH        00000000 00000000 00000000 00000000 *-SN_60         00000001 00000000 00000000 00000000 
+  SN_60A        00000000 00000000 00000000 00000000 *-SW_60E        00010011 00000000 00000000 00000000 
+
+
+数据结构：
+NO顺序\信号反转标记\信号名\32位数据
+0\null\SN_29\00000000 00000000 00000000 00000000
+1\*-\SS_29LT\00000000 00000000 00000011 11111111
+2\null\SN_PCH\00000000 00000000 00000000 00000000
+3\ *-\SN_60\00000001 00000000 00000000 00000000
+4\null\SN_60A\ 00000000 00000000 00000000 00000000
+5\*-\SW_60E\00010011 00000000 00000000 00000000
+
+
+数据信号解释：
+数据源是AuxSubTableItem.xml
+其中tableCode="0xD131数据内容"部分对应的是比特部分的数据：
+<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="0" startPos="0" startCount="4" itemCode="SN_29  安全开关" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="1" startPos="4" startCount="4" itemCode="SS_29LT  安全开关 (锁存)" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="2" startPos="8" startCount="4" itemCode="SN_PCH  控制面板门打开" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="3" startPos="12" startCount="4" itemCode="SN_60 自动/检修开关 [ＯＮ:１]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="4" startPos="16" startCount="4" itemCode="SN_60A  自动/检修开关 [ＯＮ:１]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="5" startPos="20" startCount="4" itemCode="SW_60E  60･60A合理性异常" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="6" startPos="24" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="7" startPos="28" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="8" startPos="32" startCount="4" itemCode="SS_PWF  ７９回路電源异常 [异常:０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="9" startPos="36" startCount="4" itemCode="SS_ACFS  ＡＣ電源异常 [异常:０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="10" startPos="40" startCount="4" itemCode="SS_PSPF   ＤＣ－ＤＣ转换异常 [异常:０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="11" startPos="44" startCount="4" itemCode="SS_RPWD  ＰＷＤ－１ ＦＥＴ Ｏｎ検出 [検出:０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="12" startPos="48" startCount="4" itemCode="DUMMY" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="13" startPos="52" startCount="4" itemCode="SS_P12VF  １２Ｖ電源异常 [异常:０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="14" startPos="56" startCount="4" itemCode="SS_24VF ２４Ｖ電源异常 [异常:０]" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="15" startPos="60" startCount="4" itemCode="SS_S79ER  １２５Ｖ電源异常（ＧＰＳ－４） [异常:０]" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="16" startPos="64" startCount="4" itemCode="SW_ACFST  AC電源低下" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="17" startPos="68" startCount="4" itemCode="SW_PSPFT  DC電源低下" converterId="BinaryConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="18" startPos="72" startCount="4" itemCode="SF_POKL" converterId="NoDisplayConverter"/>
+	<AuxSubTableItem libId="default" tableCode="0xD131数据内容" orderNo="19" startPos="76" startCount="4" itemCode="SW_D89 安全回路動作" converterId="BinaryConverter"/>
+
+
+这里的其中orderNo 顺序和上述提到的NO顺序是一致的。所以我要求的显示效果就是：
+
+NO顺序\信号反转标记\信号名\信号解释\32位数据
+0\null\SN_29\SN_29  安全开关\00000000 00000000 00000000 00000000
+1\*-\SS_29LT\SS_29LT  安全开关 (锁存)\00000000 00000000 00000011 11111111
+2\null\SN_PCH\SN_PCH  控制面板门打开\00000000 00000000 00000000 00000000
+3\ *-\SN_60\SN_60 自动/检修开关 [ＯＮ:１]\00000001 00000000 00000000 00000000
+4\null\SN_60A\SN_60A  自动/检修开关 [ＯＮ:１]\ 00000000 00000000 00000000 00000000
+5\*-\SW_60E\SW_60E  60･60A合理性异常\00010011 00000000 00000000 00000000
+
+
+2. 25ms 
+数据是这样的：
+                   1        2        3        4        5        6        7        8        9       10       11       12       13       14       15       16 
+  yobi1             00       00       00       00       00       00       00       00       00       00       00       00       00       00       00       00 
+  yobi1             00       00       00       00       00       00       00       00       00       00       00       00       00       00       00       00 
+  yobi2             00       00       00       00       00       00       00       00       00       00       00       00       00       00       00       00 
+  yobi2             00       00       00       00       00       00       00       00       00       00       00       00       00       00       00       00 
+  yobi3             00       00       00       00       00       00       00       00       00       00       00       00       00       00       00       00 
+  yobi3             00       00       00       00       00       00       00       00       00       00       00       00       00       00       00       00 
+  MP_PTMD           01       01       01       01       01       01       01       01       01       01       01       01       01       01       01       01 
+  MP_PTMD           01       01       01       01       01       01       01       01       01       01       01       01       01       01       01       01 
+  WQ_VPAT     00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
