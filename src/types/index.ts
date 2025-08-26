@@ -15,6 +15,7 @@ export interface ElevatorData {
   data25ms: NumericData[];
   data50ms: NumericData[];
   snapshotData: SnapshotData[];
+  driverData?: DriverData; // 驱动段数据
   parseTime: number; // 解析耗时(ms)
 }
 
@@ -76,6 +77,10 @@ export interface DataStore {
   error: string | null;
   parseProgress: number; // 解析进度 0-100
   selectedSignals: string[]; // 用户选择的信号
+  // 驱动段相关状态
+  driverParseProgress: number; // 驱动段解析进度
+  selectedDriverSignals: string[]; // 用户选择的驱动段信号
+  driverViewMode: 'control' | 'driver'; // 切换视图模式
 }
 
 // 数据操作类型
@@ -87,7 +92,56 @@ export type DataAction =
   | { type: 'SET_PROGRESS'; payload: number }
   | { type: 'SET_PARSE_PROGRESS'; payload: number }
   | { type: 'SELECT_SIGNALS'; payload: string[] }
-  | { type: 'CLEAR_DATA' };
+  | { type: 'CLEAR_DATA' }
+  | { type: 'SET_DRIVER_DATA'; payload: DriverData }
+  | { type: 'SET_DRIVER_PARSE_PROGRESS'; payload: number }
+  | { type: 'SELECT_DRIVER_SIGNALS'; payload: string[] }
+  | { type: 'SET_DRIVER_VIEW_MODE'; payload: 'control' | 'driver' };
+
+// 驱动段数据主结构
+export interface DriverData {
+  timestamp: string;
+  deviceInfo: string;
+  bit5msData: DriverBitSignal[];
+  bit10msData: DriverBitSignal[];
+  bit50msData: DriverBitSignal[];
+  numeric5msData: DriverNumericData[];
+  numeric10msData: DriverNumericData[];
+  numeric50msData: DriverNumericData[];
+  snapshotData: DriverSnapshotData[];
+}
+
+// 驱动段比特信号数据
+export interface DriverBitSignal {
+  orderNo: number;
+  signalName: string;
+  invertFlag: string | null; // "*-" 表示信号反转
+  description: string; // 从XML配置解析的信号描述
+  binaryData: string; // 32位二进制数据
+  isActive: boolean; // 当前信号状态
+  hexValue: string; // 原始十六进制值
+  samplingRate: '5ms' | '10ms' | '50ms'; // 采样频率
+}
+
+// 驱动段数值数据
+export interface DriverNumericData {
+  signalName: string;
+  hexValues: string[]; // 十六进制数据数组
+  timestamps?: string[]; // 对应的时间戳
+  unit?: string;
+  dataType: '5ms' | '10ms' | '50ms';
+  samplingRate: number; // 采样频率 Hz
+}
+
+// 驱动段快照数据
+export interface DriverSnapshotData {
+  timestamp: string;
+  name: string;
+  description: string;
+  data: string;
+  category: 'driver_snapshot';
+  orderNo?: number;
+}
 
 // 数据段结构
 export interface DataSections {
@@ -95,6 +149,18 @@ export interface DataSections {
   bit: string;
   ms25: string;
   ms50: string;
+  snapshot: string;
+  driver?: string; // 驱动段原始数据
+}
+
+// 驱动段数据段结构
+export interface DriverSections {
+  bit5ms: string;
+  bit10ms: string;
+  bit50ms: string;
+  numeric5ms: string;
+  numeric10ms: string;
+  numeric50ms: string;
   snapshot: string;
 }
 

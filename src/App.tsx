@@ -7,6 +7,8 @@ import BitData from './pages/BitData';
 import Data25ms from './pages/Data25ms';
 import Data50ms from './pages/Data50ms';
 import SnapshotData from './pages/SnapshotData';
+// 驱动段数据页面
+import DriverData from './pages/DriverData';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
               <Route path="data-25ms" element={<Data25ms />} />
               <Route path="data-50ms" element={<Data50ms />} />
               <Route path="snapshot" element={<SnapshotData />} />
+              {/* 驱动段数据路由 */}
+              <Route path="driver-data" element={<DriverData />} />
             </Route>
           </Routes>
         </div>

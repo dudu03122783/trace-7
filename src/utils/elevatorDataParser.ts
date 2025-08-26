@@ -1,6 +1,7 @@
 // 电梯数据解析器
-import { ElevatorData, BitSignal, NumericData, SnapshotData, DataSections } from '../types';
+import { ElevatorData, BitSignal, NumericData, SnapshotData, DataSections, DriverData } from '../types';
 import { getSignalConfig, isInvertedSignal } from './xmlConfig';
+import { DriverDataParser } from './driverDataParser';
 
 export class ElevatorDataParser {
   private startTime: number = 0;
@@ -10,6 +11,18 @@ export class ElevatorDataParser {
     this.startTime = Date.now();
     const content = await this.readFileContent(file);
     const sections = this.splitIntoSections(content);
+    
+    // 检查是否包含驱动段数据
+    let driverData: DriverData | undefined;
+    if (DriverDataParser.hasDriverData(content)) {
+      try {
+        const driverParser = new DriverDataParser();
+        driverData = await driverParser.parseDriverData(content);
+        console.log('驱动段数据解析成功:', driverData);
+      } catch (error) {
+        console.warn('驱动段数据解析失败:', error);
+      }
+    }
     
     return {
       fileName: file.name,
@@ -25,6 +38,7 @@ export class ElevatorDataParser {
       data25ms: this.parseMs25Section(sections.ms25),
       data50ms: this.parseMs50Section(sections.ms50),
       snapshotData: this.parseSnapshotSection(sections.snapshot),
+      driverData,
       parseTime: Date.now() - this.startTime
     };
   }

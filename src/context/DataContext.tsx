@@ -1,6 +1,6 @@
 // 数据状态管理Context
 import React, { createContext, useContext, useReducer, ReactNode, useEffect } from 'react';
-import { DataStore, DataAction, ElevatorData, XMLConfig } from '../types';
+import { DataStore, DataAction, ElevatorData, XMLConfig, DriverData } from '../types';
 import { XMLConfigParser } from '../utils/xmlConfigParser';
 
 // 初始状态
@@ -10,7 +10,11 @@ const initialState: DataStore = {
   isLoading: false,
   error: null,
   parseProgress: 0,
-  selectedSignals: []
+  selectedSignals: [],
+  // 驱动段相关状态
+  driverParseProgress: 0,
+  selectedDriverSignals: [],
+  driverViewMode: 'control'
 };
 
 // Reducer函数
@@ -65,6 +69,34 @@ function dataReducer(state: DataStore, action: DataAction): DataStore {
         selectedSignals: action.payload
       };
     
+    // 新增驱动段相关actions
+    case 'SET_DRIVER_DATA':
+      return {
+        ...state,
+        currentData: state.currentData ? {
+          ...state.currentData,
+          driverData: action.payload
+        } : null
+      };
+    
+    case 'SET_DRIVER_PARSE_PROGRESS':
+      return {
+        ...state,
+        driverParseProgress: Math.max(0, Math.min(100, action.payload))
+      };
+    
+    case 'SELECT_DRIVER_SIGNALS':
+      return {
+        ...state,
+        selectedDriverSignals: action.payload
+      };
+    
+    case 'SET_DRIVER_VIEW_MODE':
+      return {
+        ...state,
+        driverViewMode: action.payload
+      };
+    
     case 'CLEAR_DATA':
       return {
         ...initialState,
@@ -88,6 +120,9 @@ interface DataContextType {
   setProgress: (progress: number) => void;
   selectSignals: (signals: string[]) => void;
   clearData: () => void;
+  // 文件操作方法
+  setFileContent: (content: string) => void;
+  setFileName: (name: string) => void;
   // 数据获取方法
   getBitData: () => any[];
   getMs25Data: () => any[];
@@ -95,6 +130,15 @@ interface DataContextType {
   getSnapshotData: () => any[];
   getSnapshotDataWithDescription: () => any[];
   getSignalDescription: (signalName: string, orderIndex?: number, tableCode?: string) => string;
+  // 驱动段相关方法
+  setDriverData: (data: DriverData) => void;
+  setDriverParseProgress: (progress: number) => void;
+  selectDriverSignals: (signals: string[]) => void;
+  setDriverViewMode: (mode: 'control' | 'driver') => void;
+  getDriverBitData: (samplingRate?: '5ms' | '10ms' | '50ms') => any[];
+  getDriverNumericData: (samplingRate?: '5ms' | '10ms' | '50ms') => any[];
+  getDriverSnapshotData: () => any[];
+  hasDriverData: () => boolean;
 }
 
 // 创建Context
@@ -168,6 +212,34 @@ export function DataProvider({ children }: DataProviderProps) {
 
   const clearData = () => {
     dispatch({ type: 'CLEAR_DATA' });
+  };
+
+  // 驱动段相关方法
+  const setDriverData = (data: DriverData) => {
+    dispatch({ type: 'SET_DRIVER_DATA', payload: data });
+  };
+
+  const setDriverParseProgress = (progress: number) => {
+    dispatch({ type: 'SET_DRIVER_PARSE_PROGRESS', payload: progress });
+  };
+
+  const selectDriverSignals = (signals: string[]) => {
+    dispatch({ type: 'SELECT_DRIVER_SIGNALS', payload: signals });
+  };
+
+  const setDriverViewMode = (mode: 'control' | 'driver') => {
+    dispatch({ type: 'SET_DRIVER_VIEW_MODE', payload: mode });
+  };
+
+  // 文件操作方法
+  const setFileContent = (content: string) => {
+    // 这里可以添加文件内容处理逻辑
+    console.log('设置文件内容:', content.length, '字符');
+  };
+
+  const setFileName = (name: string) => {
+    // 这里可以添加文件名处理逻辑
+    console.log('设置文件名:', name);
   };
 
   // 数据获取方法
@@ -299,6 +371,77 @@ export function DataProvider({ children }: DataProviderProps) {
     }
   };
 
+  // 驱动段数据获取方法
+  const getDriverBitData = (samplingRate?: '5ms' | '10ms' | '50ms') => {
+    if (!state.currentData?.driverData) return [];
+    
+    let bitData = [];
+    const { driverData } = state.currentData;
+    
+    if (!samplingRate) {
+      // 返回所有频率的数据
+      bitData = [
+        ...driverData.bit5msData,
+        ...driverData.bit10msData,
+        ...driverData.bit50msData
+      ];
+    } else {
+      // 返回指定频率的数据
+      switch (samplingRate) {
+        case '5ms':
+          bitData = driverData.bit5msData;
+          break;
+        case '10ms':
+          bitData = driverData.bit10msData;
+          break;
+        case '50ms':
+          bitData = driverData.bit50msData;
+          break;
+      }
+    }
+    
+    // 不添加描述信息，因为驱动段的信号解释是错误的
+    return bitData;
+  };
+
+  const getDriverNumericData = (samplingRate?: '5ms' | '10ms' | '50ms') => {
+    if (!state.currentData?.driverData) return [];
+    
+    const { driverData } = state.currentData;
+    
+    if (!samplingRate) {
+      // 返回所有频率的数据
+      return [
+        ...driverData.numeric5msData,
+        ...driverData.numeric10msData,
+        ...driverData.numeric50msData
+      ];
+    } else {
+      // 返回指定频率的数据
+      switch (samplingRate) {
+        case '5ms':
+          return driverData.numeric5msData;
+        case '10ms':
+          return driverData.numeric10msData;
+        case '50ms':
+          return driverData.numeric50msData;
+        default:
+          return [];
+      }
+    }
+  };
+
+  const getDriverSnapshotData = () => {
+    if (!state.currentData?.driverData) return [];
+    
+    // 不添加描述信息，因为驱动段的信号解释是错误的
+    return state.currentData.driverData.snapshotData.sort((a, b) => (a.orderNo || 0) - (b.orderNo || 0));
+  };
+
+  const hasDriverData = (): boolean => {
+    return !!(state.currentData?.driverData);
+  };
+
   const value: DataContextType = {
     state,
     dispatch,
@@ -309,12 +452,23 @@ export function DataProvider({ children }: DataProviderProps) {
     setProgress,
     selectSignals,
     clearData,
+    setFileContent,
+    setFileName,
     getBitData,
     getMs25Data,
     getMs50Data,
     getSnapshotData,
     getSnapshotDataWithDescription,
-    getSignalDescription
+    getSignalDescription,
+    // 驱动段相关方法
+    setDriverData,
+    setDriverParseProgress,
+    selectDriverSignals,
+    setDriverViewMode,
+    getDriverBitData,
+    getDriverNumericData,
+    getDriverSnapshotData,
+    hasDriverData
   };
 
   return (
@@ -338,6 +492,9 @@ export function useDataSelector<T>(selector: (state: DataStore) => T): T {
   const { state } = useData();
   return selector(state);
 }
+
+// 导出DataContext
+export { DataContext };
 
 // 常用选择器
 export const useCurrentData = () => useDataSelector(state => state.currentData);

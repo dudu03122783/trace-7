@@ -167,11 +167,33 @@ export default function DataImport() {
                   <div className="text-sm space-y-1">
                     <div><strong>文件名:</strong> {state.currentData.fileName}</div>
                     <div><strong>文件大小:</strong> {state.currentData.fileSize}</div>
-                    <div><strong>解析时间:</strong> {state.currentData.parseTime}</div>
-                    <div><strong>比特数据:</strong> {state.currentData.bitData.length} 条</div>
-                    <div><strong>25ms数据:</strong> {state.currentData.data25ms.length} 条</div>
-                    <div><strong>50ms数据:</strong> {state.currentData.data50ms.length} 条</div>
-                    <div><strong>快照数据:</strong> {state.currentData.snapshotData.length} 条</div>
+                    <div><strong>解析时间:</strong> {state.currentData.parseTime}ms</div>
+                    <div className="border-t pt-2 mt-2">
+                      <div className="font-medium text-gray-700 mb-1">控制段数据：</div>
+                      <div className="ml-4 space-y-1">
+                        <div><strong>比特数据:</strong> {state.currentData.bitData.length} 条</div>
+                        <div><strong>25ms数据:</strong> {state.currentData.data25ms.length} 条</div>
+                        <div><strong>50ms数据:</strong> {state.currentData.data50ms.length} 条</div>
+                        <div><strong>快照数据:</strong> {state.currentData.snapshotData.length} 条</div>
+                      </div>
+                    </div>
+                    {state.currentData.driverData && (
+                      <div className="border-t pt-2 mt-2">
+                        <div className="font-medium text-blue-700 mb-1">驱动段数据：</div>
+                        <div className="ml-4 space-y-1">
+                          <div><strong>比特5ms:</strong> {state.currentData.driverData.bit5msData.length} 条</div>
+                          <div><strong>比特10ms:</strong> {state.currentData.driverData.bit10msData.length} 条</div>
+                          <div><strong>比特50ms:</strong> {state.currentData.driverData.bit50msData.length} 条</div>
+                          <div><strong>数值5ms:</strong> {state.currentData.driverData.numeric5msData.length} 条</div>
+                          <div><strong>数值10ms:</strong> {state.currentData.driverData.numeric10msData.length} 条</div>
+                          <div><strong>数值50ms:</strong> {state.currentData.driverData.numeric50msData.length} 条</div>
+                          <div><strong>快照数据:</strong> {state.currentData.driverData.snapshotData.length} 条</div>
+                          <div className="text-xs text-blue-600 mt-2">
+                            <strong>数据时间:</strong> {state.currentData.driverData.timestamp}
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               )}
@@ -221,7 +243,11 @@ export default function DataImport() {
         <div className="space-y-2 text-sm text-gray-600">
           <div className="flex items-start">
             <span className="font-medium text-gray-900 mr-2">1.</span>
-            <span>首先上传TXT数据文件，系统将自动解析比特数据、25ms数据、50ms数据和快照数据</span>
+            <span>首先上传TXT数据文件，系统将自动解析控制段和驱动段数据：</span>
+          </div>
+          <div className="ml-6 space-y-1 text-xs text-gray-500">
+            <div>• <strong>控制段：</strong>比特数据、25ms数据、50ms数据、快照数据</div>
+            <div>• <strong>驱动段：</strong>比特5ms/10ms/50ms、数值5ms/10ms/50ms、快照数据</div>
           </div>
           <div className="flex items-start">
             <span className="font-medium text-gray-900 mr-2">2.</span>
@@ -229,11 +255,19 @@ export default function DataImport() {
           </div>
           <div className="flex items-start">
             <span className="font-medium text-gray-900 mr-2">3.</span>
-            <span>支持数据导出功能，可将分析结果导出为CSV或Excel格式</span>
+            <span>驱动段数据支持高频数据虚拟滚动，优化大数据量的显示性能</span>
           </div>
           <div className="flex items-start">
             <span className="font-medium text-gray-900 mr-2">4.</span>
+            <span>支持数据导出功能，可将分析结果导出为CSV格式</span>
+          </div>
+          <div className="flex items-start">
+            <span className="font-medium text-gray-900 mr-2">5.</span>
             <span>系统内置信号配置，自动提供信号描述和解释</span>
+          </div>
+          <div className="flex items-start">
+            <span className="font-medium text-gray-900 mr-2">6.</span>
+            <span>驱动段数值数据支持图表模式，可直观查看数据趋势变化</span>
           </div>
         </div>
       </div>
